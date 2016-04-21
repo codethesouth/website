@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>CodeTheSouth</title>
+    <meta name="author" content="David Jones" />
+    <meta name="description" content="Official CodeTheSouth website." />
+    <meta name="keywords" content="fullpage,jquery,demo,scrollbar,scroll,bar,fullscreen,navigation,control arrows, dots" />
+    <meta name="Resource-type" content="Document" />
+	
+    <link rel="stylesheet" type="text/css" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/lib/bootstrap/dist/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" type="text/css" href="/lib/fullpage.js/jquery.fullPage.css" />
+    <link rel="stylesheet" type="text/css" href="/css/cts.css" />
+	<link rel="shortcut icon" href=""> <!-- TODO: Get favicon.ico -->
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	  <div class="container-fluid">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+		  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+		    <span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		  </button>
+		  <a class="navbar-brand" href="#home">
+		    <img class="logoicon" src="/img/codethesouth-icon-rgb.svg">
+		  </a>
+		</div>
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		  <ul class="nav navbar-nav navbar-right">
+			<li><a href="#cts">Who we are</a></li>
+			<li><a href="#gettingStarted">Getting Started</a></li>
+			<li><a href="#contactUs">Contact Us</a></li>
+		  </ul>
+		</div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+    <div id="fullpage">
+		<!-- TODO: Break sections in individual vash files. So much easier to maintain!! -->	
+        <div class="section " id="section0">
+            <div class="col-md-offset-7 col-md-3">
+				<div class="row"> 
+					<img class="logo" src="/img/codethesouth-logo-rgb-999.svg">
+				</div>
+				<div class="row"> 
+					<p id="slogan">Improving the infrastructure of The South,<br/> one line of code at a time.</p>
+				</div>
+            </div>
+        </div>
+        <div class="section" id="section1">
+            <div class="intro">
+                <h1>We are we?</h1>
+                <p>
+                    We are CodeTheSouth!
+                </p>
+            </div>
+        </div>
+        <div class="section" id="section2">
+			<div class="col-md-offset-4 col-md-4">
+				<form>
+					<div class="form-group">
+					    <label for="inputIdea">Have an Idea?</label>
+						<textarea class="form-control" rows="3" id="inputIdea" placeholder="I'd be cool if..."></textarea>
+					</div>
+					<div class="form-group">
+						<label for="inputEmail">Email address</label>
+						<input type="email" class="form-control" id="inputEmail" placeholder="Email">
+					</div>
+					<button type="submit" class="btn btn-default">Send Idea</button>
+				</form>
+			</div>
+        </div>
+        <div class="section" id="section3">
+            <h1>Contact Us!</h1>
+            <div>
+            	<div class="row" id="simplehelixfooter">
+            		<a href="http://www.simplehelix.com"><img class="logo" src="/img/simplehelix.svg"></a>
+            		<p>Website Hosting provided by: <a style="color:#444; font-family:OstrichSans-Black;" href="http://www.simplehelix.com">Simple Helix</a></p>
+            	</div>
+            </div>
+        </div>
+    </div>
+
+	<!--[if IE]>
+        <script type="text/javascript">
+             var console = { log: function() {} };
+        </script>
+    <![endif]-->
+	
+    <script src="/lib/jquery/dist/jquery.min.js"></script>
+    <script src="/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/lib/fullpage.js/jquery.fullPage.js"></script>
+
+    <script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				anchors: ['home', 'cts', 'gettingStarted', 'contactUs'],
+				sectionsColor: ['#fff', '#7E8F7C', '#c23b22', '#7E8F7C']/*,
+				scrollBar: true*/
+			});
+		});
+    </script>
+</body>
+</html>

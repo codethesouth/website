@@ -1,0 +1,95 @@
+﻿@font-face {
+    font-family: 'Lato-Hairline';
+    src: url('../font/lato/Lato-Hairline.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'OstrichSans-Black';
+    src: url('../font/ostrich-sans/OstrichSans-Black.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Lato-Light';
+    src: url('../font/lato/Lato-Light.ttf') format('truetype');
+}
+
+.navbar {
+	margin-bottom: 0;
+    font-family: OstrichSans-Black;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #444;
+}
+
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
+    color: #000;
+}
+
+a.navbar-brand {
+    padding: 0;
+}
+
+.logoicon {
+    margin: 0 0 0 5px;
+    height: 50px;
+}
+
+.logo {
+    height: 100px;
+}
+
+
+/* Centered texts in each section
+* --------------------------------------- */
+.section{
+	text-align:center;
+}
+
+/* Defining home section background
+* --------------------------------------- */
+#section0 {
+    background-image: url('/img/rocket.jpg');
+    background-size: cover;
+    background-position:center;
+    padding: 0;
+}
+
+#section0:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(1,32,36, 0.75);
+}
+
+#slogan {
+    color: #eee;
+    margin-bottom: 200px;
+    font-family: Lato-Light;
+}
+
+@media (min-width: @screen-md-min) {
+    #slogan{
+        margin-bottom: 0;
+    }
+}
+
+#simplehelixfooter {
+   position:fixed;
+   margin-left: auto;
+   margin-right: auto;
+   left:0px;
+   bottom:0px;
+   height:125px;
+   width:100%;
+}
+
+/* IE 6 */
+* html #simplehelixfooter {
+   position:absolute;
+   top:expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px');
+}
