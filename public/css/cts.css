@@ -13,6 +13,17 @@
     src: url('../font/lato/Lato-Light.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'Raleway';
+    src: url('../font/raleway/Raleway-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../font/roboto/Roboto-Medium.ttf') format('truetype');
+}
+
+
 .navbar {
 	margin-bottom: 0;
     font-family: OstrichSans-Black;
@@ -72,7 +83,7 @@ a.navbar-brand {
     font-family: Lato-Light;
 }
 
-@media (min-width: @screen-md-min) {
+@media(min-width:992px){
     #slogan{
         margin-bottom: 0;
     }
@@ -92,4 +103,50 @@ a.navbar-brand {
 * html #simplehelixfooter {
    position:absolute;
    top:expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px');
+}
+
+hr {
+  max-width: 200px;
+  margin: 20px auto;
+}
+
+hr.double-style {
+	border-top: 3px double #888;
+}
+
+.get-involved-header {
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #aaa;
+  font-size: 48px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.get-involved-p {
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #888;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.get-involved-buffer {
+  margin-top: 75px;
+}
+
+.row-top-buffer {
+  margin-top: 150px;
+}
+
+.row-bottom-buffer {
+  margin-top: 50px;
+}
+
+@media(max-width:992px){
+  .row-top-buffer {
+    margin-top: 0px;
+  }
+
+  .row-bottom-buffer {
+    margin-top: 0px;
+  }
 }
