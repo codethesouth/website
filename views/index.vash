@@ -45,7 +45,7 @@
 	</nav>
     <div id="fullpage">
 		<!-- TODO: Break sections in individual vash files. So much easier to maintain!! -->
-        <div class="section " id="section0">
+        <div class="section" id="section0">
             <div class="col-md-offset-7 col-md-3">
 				<div class="row">
 					<img class="logo" src="/img/codethesouth-logo-rgb-999.svg">
@@ -84,7 +84,7 @@
     				</div>
     				<div class="col-lg-offset-2 col-lg-3 col-md-6 text-center">
     					<div class="service-box">
-    						<i class="fa fa-4x fa-keyboard-o wow bounceIn text-primary" data-wow-delay=".1s"></i>
+    						<i class="fa fa-4x fa-keyboard-o wow bounceIn text-primary"></i>
     						<h3 class="group-title">Software Developer</h3>
     						<p class="text-muted">Can you write code? Help us build apps to make the future better. Check out our <a href="https://github.com/codeforhuntsville">GitHub</a> page to help.</p>
     					</div>
@@ -95,16 +95,16 @@
     			<div class="row row-bottom-buffer">
     				<div class="col-lg-offset-2 col-lg-3 col-md-6 text-center">
     					<div class="service-box">
-    						<i class="fa fa-4x fa-newspaper-o wow bounceIn text-primary" data-wow-delay=".2s"></i>
-    						<h3 class="group-title">Local Government Worker</h3>
-    						<p class="text-muted">We need contacts to help us form new projects. Become a leason for CodeTheSouth.</p>
+    						<i class="fa fa-4x fa-recycle wow bounceIn text-primary" data-wow-delay=".2s"></i>
+    						<h3 class="group-title">Nonprofit Agency</h3>
+    						<p class="text-muted">You have to make your websites with love these days!</p>
     					</div>
     				</div>
     				<div class="col-lg-offset-2 col-lg-3 col-md-6 text-center">
     					<div class="service-box">
-    						<i class="fa fa-4x fa-recycle wow bounceIn text-primary" data-wow-delay=".3s"></i>
-    						<h3 class="group-title">Nonprofit Agency</h3>
-    						<p class="text-muted">You have to make your websites with love these days!</p>
+    						<i class="fa fa-4x fa-newspaper-o wow bounceIn text-primary" data-wow-delay=".2s"></i>
+    						<h3 class="group-title">Local Government Worker</h3>
+    						<p class="text-muted">We need contacts to help us form new projects. Become a leason for CodeTheSouth.</p>
     					</div>
     				</div>
     			</div>
@@ -112,21 +112,21 @@
         </div>
         <div class="section" id="section3">
             <h1>Contact Us!</h1>
-            	<div class="row">
-					<div class="col-xs-offset-4 col-xs-1"> 
-						<a href="https://www.facebook.com/groups/code4huntsville"><i class="fa fa-4x fa-facebook wow bounceIn text-primary" data-wow-delay=".3s"></i></a>
-					</div>
-					<div class="col-xs-1"> 
-						<a href="https://twitter.com/intent/follow?screen_name=code4huntsville"><i class="fa fa-4x fa-twitter wow bounceIn text-primary" data-wow-delay=".3s"></i></a>
-					</div>
-					<div class="col-xs-1"> 
-						<a href="https://github.com/codeforhuntsville"><i class="fa fa-4x fa-github wow bounceIn text-primary" data-wow-delay=".3s"></i></a>
-					</div>
-					<div class="col-xs-2" id="simplehelixfooter">
-            			<a href="http://www.simplehelix.com"><img class="logo" src="/img/simplehelix.svg"></a>
-            			<p>Website Hosting provided by: <a style="color:#444; font-family:OstrichSans-Black;" href="http://www.simplehelix.com">Simple Helix</a></p>
-					</div>
-            	</div>
+          	<div class="row">
+    					<div class="col-xs-offset-4 col-xs-1">
+    						<a href="https://www.facebook.com/groups/code4huntsville"><i class="fa fa-4x fa-facebook wow bounceIn text-primary" data-wow-delay=".3s"></i></a>
+    					</div>
+    					<div class="col-xs-1">
+    						<a href="https://twitter.com/intent/follow?screen_name=code4huntsville"><i class="fa fa-4x fa-twitter wow bounceIn text-primary" data-wow-delay=".3s"></i></a>
+    					</div>
+    					<div class="col-xs-1">
+    						<a href="https://github.com/codeforhuntsville"><i class="fa fa-4x fa-github wow bounceIn text-primary" data-wow-delay=".3s"></i></a>
+    					</div>
+    					<div class="col-xs-2" id="simplehelixfooter">
+          			<a href="http://www.simplehelix.com"><img class="logo" src="/img/simplehelix.svg"></a>
+          			<p>Website Hosting provided by: <a style="color:#444; font-family:OstrichSans-Black;" href="http://www.simplehelix.com">Simple Helix</a></p>
+    					</div>
+          	</div>
         </div>
     </div>
 
@@ -140,7 +140,7 @@
     <script type="text/javascript" src="/lib/bootstrap/dist/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="/lib/fullpage.js/jquery.fullPage.js"></script>
     <script type="text/javascript" src="/lib/jquery-easing/jquery.easing.min.js"></script>
-	<script type="text/javascript" src="/lib/slimscroll/jquery.slimscroll.min.js"></script>
+	  <script type="text/javascript" src="/lib/slimscroll/jquery.slimscroll.min.js"></script>
     <script type="text/javascript" src="/lib/wow/dist/wow.min.js"></script>
 
     <script type="text/javascript">
@@ -148,11 +148,13 @@
 			$('#fullpage').fullpage({
 				anchors: ['home', 'cts', 'gettingStarted', 'contactUs'],
 				sectionsColor: ['#fff', '#7E8F7C', '#0a1823', '#7E8F7C'],
-				scrollOverflow: true
-        /*,
-				scrollBar: true*/
+				scrollOverflow: true,
+        scrollBar: true
 			});
 		});
+    </script>
+    <script>
+      new WOW().init();
     </script>
 </body>
 </html>
