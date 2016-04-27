@@ -90,17 +90,16 @@ a.navbar-brand {
 }
 
 #simplehelixfooter {
-   position:fixed;
+   position:absolute;
    margin-left: auto;
    margin-right: auto;
-   left:0px;
-   bottom:0px;
+   bottom:0;
    height:125px;
    width:100%;
 }
 
 /* IE 6 */
-* html #simplehelixfooter {
+html #simplehelixfooter {
    position:absolute;
    top:expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px');
 }
@@ -116,7 +115,7 @@ hr.double-style {
 
 .get-involved-header {
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #aaa;
+  color: #ccc;
   font-size: 48px;
   font-weight: 900;
   text-transform: uppercase;
@@ -124,7 +123,7 @@ hr.double-style {
 
 .get-involved-p {
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #888;
+  color: #777;
   font-size: 16px;
   font-weight: 300;
 }
@@ -134,19 +133,30 @@ hr.double-style {
 }
 
 .row-top-buffer {
-  margin-top: 150px;
+  margin-top: 100px;
 }
 
 .row-bottom-buffer {
-  margin-top: 50px;
+  margin-top: 100px;
 }
 
 @media(max-width:992px){
   .row-top-buffer {
-    margin-top: 0px;
+    margin-top: 0;
   }
 
   .row-bottom-buffer {
-    margin-top: 0px;
+    margin-top: 0;
   }
+}
+
+.group-title {
+    color: #aaa;
+}
+
+.group-inset {
+    padding: 25px;
+    background-color: #888;
+    border: 2px double black;
+    
 }
