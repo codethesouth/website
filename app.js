@@ -10,9 +10,9 @@ var routes = require('./routes/index');
 
 var app = express();
 
-var server = app.listen(1337, function() {
-	console.log("On 1337 port!");
-});
+//var server = app.listen(1337, function() {
+//	console.log("On 1337 port!");
+//});
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
