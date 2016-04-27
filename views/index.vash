@@ -9,10 +9,14 @@
     <meta name="keywords" content="fullpage,jquery,demo,scrollbar,scroll,bar,fullscreen,navigation,control arrows, dots" />
     <meta name="Resource-type" content="Document" />
 	
+	
     <link rel="stylesheet" type="text/css" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="/lib/bootstrap/dist/css/bootstrap-theme.min.css" />
     <link rel="stylesheet" type="text/css" href="/lib/fullpage.js/jquery.fullPage.css" />
+    <link rel="stylesheet" type="text/css" href="/lib/wow/css/libs/animate.css" />
+    <link rel="stylesheet" type="text/css" href="/lib/font-awesome/css/font-awesome.min.css" type="text/css">
     <link rel="stylesheet" type="text/css" href="/css/cts.css" />
+
 	<link rel="shortcut icon" href=""> <!-- TODO: Get favicon.ico -->
 </head>
 <body>
@@ -60,18 +64,45 @@
             </div>
         </div>
         <div class="section" id="section2">
-			<div class="col-md-offset-4 col-md-4">
-				<form>
-					<div class="form-group">
-					    <label for="inputIdea">Have an Idea?</label>
-						<textarea class="form-control" rows="3" id="inputIdea" placeholder="I'd be cool if..."></textarea>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<h2 class="section-heading">At Your Service</h2>
+						<hr class="primary">
 					</div>
-					<div class="form-group">
-						<label for="inputEmail">Email address</label>
-						<input type="email" class="form-control" id="inputEmail" placeholder="Email">
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-6 text-center">
+						<div class="service-box">
+							<i class="fa fa-4x fa-diamond wow bounceIn text-primary"></i>
+							<h3>Sturdy Templates</h3>
+							<p class="text-muted">Our templates are updated regularly so they don't break.</p>
+						</div>
 					</div>
-					<button type="submit" class="btn btn-default">Send Idea</button>
-				</form>
+					<div class="col-lg-3 col-md-6 text-center">
+						<div class="service-box">
+							<i class="fa fa-4x fa-paper-plane wow bounceIn text-primary" data-wow-delay=".1s"></i>
+							<h3>Ready to Ship</h3>
+							<p class="text-muted">You can use this theme as is, or you can make changes!</p>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 text-center">
+						<div class="service-box">
+							<i class="fa fa-4x fa-newspaper-o wow bounceIn text-primary" data-wow-delay=".2s"></i>
+							<h3>Up to Date</h3>
+							<p class="text-muted">We update dependencies to keep things fresh.</p>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 text-center">
+						<div class="service-box">
+							<i class="fa fa-4x fa-heart wow bounceIn text-primary" data-wow-delay=".3s"></i>
+							<h3>Made with Love</h3>
+							<p class="text-muted">You have to make your websites with love these days!</p>
+						</div>
+					</div>
+				</div>
 			</div>
         </div>
         <div class="section" id="section3">
@@ -91,9 +122,11 @@
         </script>
     <![endif]-->
 	
-    <script src="/lib/jquery/dist/jquery.min.js"></script>
-    <script src="/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/lib/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/lib/bootstrap/dist/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="/lib/fullpage.js/jquery.fullPage.js"></script>
+    <script type="text/javascript" src="/lib/jquery-easing/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="/lib/wow/dist/wow.min.js"></script>
 
     <script type="text/javascript">
 		$(document).ready(function() {
