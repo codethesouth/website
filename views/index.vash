@@ -8,8 +8,8 @@
     <meta name="description" content="Official CodeTheSouth website." />
     <meta name="keywords" content="fullpage,jquery,demo,scrollbar,scroll,bar,fullscreen,navigation,control arrows, dots" />
     <meta name="Resource-type" content="Document" />
-	
-	
+
+
     <link rel="stylesheet" type="text/css" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="/lib/bootstrap/dist/css/bootstrap-theme.min.css" />
     <link rel="stylesheet" type="text/css" href="/lib/fullpage.js/jquery.fullPage.css" />
@@ -44,13 +44,13 @@
 	  </div><!-- /.container-fluid -->
 	</nav>
     <div id="fullpage">
-		<!-- TODO: Break sections in individual vash files. So much easier to maintain!! -->	
+		<!-- TODO: Break sections in individual vash files. So much easier to maintain!! -->
         <div class="section " id="section0">
             <div class="col-md-offset-7 col-md-3">
-				<div class="row"> 
+				<div class="row">
 					<img class="logo" src="/img/codethesouth-logo-rgb-999.svg">
 				</div>
-				<div class="row"> 
+				<div class="row">
 					<p id="slogan">Improving the infrastructure of The South,<br/> one line of code at a time.</p>
 				</div>
             </div>
@@ -64,55 +64,58 @@
             </div>
         </div>
         <div class="section" id="section2">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12 text-center">
-						<h2 class="section-heading">At Your Service</h2>
-						<hr class="primary">
-					</div>
-				</div>
-			</div>
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-3 col-md-6 text-center">
-						<div class="service-box">
-							<i class="fa fa-4x fa-diamond wow bounceIn text-primary"></i>
-							<h3>Sturdy Templates</h3>
-							<p class="text-muted">Our templates are updated regularly so they don't break.</p>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-6 text-center">
-						<div class="service-box">
-							<i class="fa fa-4x fa-paper-plane wow bounceIn text-primary" data-wow-delay=".1s"></i>
-							<h3>Ready to Ship</h3>
-							<p class="text-muted">You can use this theme as is, or you can make changes!</p>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-6 text-center">
-						<div class="service-box">
-							<i class="fa fa-4x fa-newspaper-o wow bounceIn text-primary" data-wow-delay=".2s"></i>
-							<h3>Up to Date</h3>
-							<p class="text-muted">We update dependencies to keep things fresh.</p>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-6 text-center">
-						<div class="service-box">
-							<i class="fa fa-4x fa-heart wow bounceIn text-primary" data-wow-delay=".3s"></i>
-							<h3>Made with Love</h3>
-							<p class="text-muted">You have to make your websites with love these days!</p>
-						</div>
-					</div>
-				</div>
-			</div>
+    			<div class="container-fluid get-involved-buffer">
+    				<div class="row">
+    					<div class="col-lg-12 text-center">
+    						<h2 class="get-involved-header">Do you want to get involved?</h2>
+      					<p class="get-involved-p">Choose a group below that fits your expertise.</p>
+    						<hr class="double-style">
+    					</div>
+    				</div>
+    			</div>
+    			<div class="container">
+    				<div class="row row-top-buffer">
+    					<div class="col-lg-offset-2 col-lg-4 col-md-6 text-center">
+    						<div class="service-box">
+    							<i class="fa fa-4x fa-group wow bounceIn text-primary"></i>
+    							<h3>Community Member</h3>
+    							<p class="text-muted">Writer, artist, organizer, storyteller or social media coordinator, we need you! Help organize meetings, steer comittees or coordniate projects.</p>
+    						</div>
+    					</div>
+    					<div class="col-lg-4 col-md-6 text-center">
+    						<div class="service-box">
+    							<i class="fa fa-4x fa-keyboard-o wow bounceIn text-primary" data-wow-delay=".1s"></i>
+    							<h3>Software Developer</h3>
+    							<p class="text-muted">Can you write code? Help us build apps to make the future better. Check out our <a href="github.com/codeforhuntsvills">GitHub</a> page to help.</p>
+    						</div>
+    					</div>
+            </div>
+          </div>
+    			<div class="container">
+    				<div class="row row-bottom-buffer">
+    					<div class="col-lg-offset-2 col-lg-4 col-md-6 text-center">
+    						<div class="service-box">
+    							<i class="fa fa-4x fa-newspaper-o wow bounceIn text-primary" data-wow-delay=".2s"></i>
+    							<h3>Local Government Worker</h3>
+    							<p class="text-muted">We need contacts to help us form new projects. Become a leason for CodeTheSouth.</p>
+    						</div>
+    					</div>
+    					<div class="col-lg-4 col-md-6 text-center">
+    						<div class="service-box">
+    							<i class="fa fa-4x fa-recycle wow bounceIn text-primary" data-wow-delay=".3s"></i>
+    							<h3>Nonprofit Agency</h3>
+    							<p class="text-muted">You have to make your websites with love these days!</p>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
         </div>
         <div class="section" id="section3">
             <h1>Contact Us!</h1>
-            <div>
             	<div class="row" id="simplehelixfooter">
             		<a href="http://www.simplehelix.com"><img class="logo" src="/img/simplehelix.svg"></a>
             		<p>Website Hosting provided by: <a style="color:#444; font-family:OstrichSans-Black;" href="http://www.simplehelix.com">Simple Helix</a></p>
             	</div>
-            </div>
         </div>
     </div>
 
@@ -121,7 +124,7 @@
              var console = { log: function() {} };
         </script>
     <![endif]-->
-	
+
     <script type="text/javascript" src="/lib/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="/lib/bootstrap/dist/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="/lib/fullpage.js/jquery.fullPage.js"></script>
@@ -132,7 +135,8 @@
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
 				anchors: ['home', 'cts', 'gettingStarted', 'contactUs'],
-				sectionsColor: ['#fff', '#7E8F7C', '#c23b22', '#7E8F7C']/*,
+				sectionsColor: ['#fff', '#7E8F7C', '#0a1823', '#7E8F7C']
+        /*,
 				scrollBar: true*/
 			});
 		});
