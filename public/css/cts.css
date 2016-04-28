@@ -89,19 +89,38 @@ a.navbar-brand {
     }
 }
 
-#simplehelixfooter {
-   position:absolute;
-   margin-left: auto;
-   margin-right: auto;
-   bottom:0;
-   height:125px;
-   width:100%;
+.contact-us-top {
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  font-family: 'OstrichSans-Black';
+
 }
 
-/* IE 6 */
-html #simplehelixfooter {
+.contact-us-bot {
    position:absolute;
-   top:expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px');
+   bottom:0;
+   margin-bottom: 15px;
+   width:100%;
+   height: 50px;
+}
+
+.simplehelix {
+   top: -75px;
+   height: auto;
+   max-height: 150px;
+   min-height: 75px;
+   margin-bottom: 25px;
+}
+
+@media(max-width:992px){
+    .simplehelix {
+      top: -25px;
+    }
+}
+
+.socialmedia {
+  height: 50px;
 }
 
 hr {
@@ -158,5 +177,21 @@ hr.double-style {
     padding: 25px;
     background-color: #888;
     border: 2px double black;
-    
+
+}
+
+ .fa-facebook {
+   color: #3b5998;
+ }
+
+.fa-twitter {
+  color: #55acee;
+}
+
+.fa-github {
+  color: #333;
+}
+
+.fa-slack {
+  color: #0f7965
 }

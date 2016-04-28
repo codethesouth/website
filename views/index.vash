@@ -111,21 +111,42 @@
     		</div>
         </div>
         <div class="section" id="section3">
-            <h1>Contact Us!</h1>
+            <div class="contact-us-top">
+              <h1>Contact us, join the mailing list, <br>or submit an idea!</h1>
+            </div>
+            <div class="row">
+              <div class="col-md-offset-4 col-md-4 col-xs-offset-2 col-xs-8">
+                <form>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                  </div>
+                    <label for="message">Message</label>
+                  <textarea class="form-control" id="message" cols="30" rows="8"></textarea>
+                  <br>
+                  <button type="submit" class="btn btn-warning btn-block">Submit</button>
+                </form>
+              </div>
+            </div>
           	<div class="row">
-    					<div class="col-xs-offset-4 col-xs-1">
-    						<a href="https://www.facebook.com/groups/code4huntsville"><i class="fa fa-4x fa-facebook wow bounceIn text-primary" data-wow-delay=".3s"></i></a>
+              <div class="contact-us-bot">
+    					<div class="col-md-offset-3 col-md-1 col-xs-offset-1 col-xs-2 socialmedia">
+    						<a href="https://www.facebook.com/groups/code4huntsville"><i class="fa fa-4x fa-facebook wow bounceIn" data-wow-delay=".3s"></i></a>
     					</div>
-    					<div class="col-xs-1">
-    						<a href="https://twitter.com/intent/follow?screen_name=code4huntsville"><i class="fa fa-4x fa-twitter wow bounceIn text-primary" data-wow-delay=".3s"></i></a>
+    					<div class="col-md-1 col-xs-2 socialmedia">
+    						<a href="https://twitter.com/intent/follow?screen_name=code4huntsville"><i class="fa fa-4x fa-twitter wow bounceIn" data-wow-delay=".1s"></i></a>
     					</div>
-    					<div class="col-xs-1">
-    						<a href="https://github.com/codeforhuntsville"><i class="fa fa-4x fa-github wow bounceIn text-primary" data-wow-delay=".3s"></i></a>
-    					</div>
-    					<div class="col-xs-2" id="simplehelixfooter">
+    					<div class="col-md-2 col-xs-2 wow bounceIn simplehelix" >
           			<a href="http://www.simplehelix.com"><img class="logo" src="/img/simplehelix.svg"></a>
-          			<p>Website Hosting provided by: <a style="color:#444; font-family:OstrichSans-Black;" href="http://www.simplehelix.com">Simple Helix</a></p>
+          			<p class="hidden-sm hidden-xs">Website Hosting provided by: <a style="color:#444; font-family:OstrichSans-Black;" href="http://www.simplehelix.com">Simple Helix</a></p>
     					</div>
+    					<div class="col-md-1 col-xs-2 socialmedia">
+    						<a href="https://github.com/codeforhuntsville"><i class="fa fa-4x fa-github wow bounceIn" data-wow-delay=".1s"></i></a>
+    					</div>
+    					<div class="col-md-1 col-xs-2 socialmedia">
+    						<a href="https://codeforhuntsville.slack.com"><i class="fa fa-4x fa-slack wow bounceIn" data-wow-delay=".3s"></i></a>
+    					</div>
+            </div>
           	</div>
         </div>
     </div>
@@ -147,7 +168,7 @@
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
 				anchors: ['home', 'cts', 'gettingStarted', 'contactUs'],
-				sectionsColor: ['#fff', '#7E8F7C', '#0a1823', '#7E8F7C'],
+				sectionsColor: ['#fff', '#7E8F7C', '#0a1823', '#aaa'],
 				scrollOverflow: true,
         scrollBar: true
 			});
