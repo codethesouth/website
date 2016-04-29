@@ -167,6 +167,7 @@ hr.double-style {
 
   .row-bottom-buffer {
     margin-top: 0;
+    padding-bottom: 100px;
   }
 }
 
