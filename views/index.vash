@@ -143,7 +143,7 @@
     					</div>
     					<div class="col-md-2 col-xs-2 wow bounceIn simplehelix" >
           					<a href="http://www.simplehelix.com"><img class="simplehelixlogo" src="/img/simplehelix.svg"></a>
-          					<p class="hidden-sm hidden-xs">Website Hosting provided by: <a style="color:#444; font-family:OstrichSans-Black;" href="http://www.simplehelix.com">Simple Helix</a></p>
+          					<p class="hidden-xs">Website Hosting provided by: <a style="color:#444; font-family:OstrichSans-Black;" href="http://www.simplehelix.com">Simple Helix</a></p>
     					</div>
     					<div class="col-md-1 col-xs-2 socialmedia">
     						<a href="https://github.com/codeforhuntsville"><i class="fa fa-4x fa-github wow bounceIn" data-wow-delay=".1s"></i></a>

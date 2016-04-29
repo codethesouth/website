@@ -96,7 +96,7 @@ a.navbar-brand {
     font-family: Lato-Light;
 }
 
-@media(min-width:992px){
+@media(min-width:480px){
     #slogan{
         margin-bottom: 0;
     }
@@ -110,7 +110,7 @@ a.navbar-brand {
   font-family: 'OstrichSans-Black';
 }
 
-@media(max-width:992px){
+@media(max-width:480px){
     .contact-us-top > h1{
       font-size: 24px;
     }
@@ -128,7 +128,7 @@ a.navbar-brand {
   height: 50px;
 }
 
-@media (max-width:992px){
+@media (max-width:480px){
     .socialmedia {
         margin-top: 0;
         margin-bottom: 10px;
@@ -167,7 +167,7 @@ hr.double-style {
   margin-top: 75px;
 }
 
-@media (max-width:992px){
+@media (max-width:480px){
   .get-involved-header {
     font-size: 20px;
     font-weight: 450;
@@ -207,7 +207,7 @@ hr.double-style {
   margin-top: 100px;
 }
 
-@media(max-width:992px){
+@media(max-width:480px){
   .row-top-buffer {
     margin-top: 0;
   }
