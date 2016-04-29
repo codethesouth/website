@@ -47,7 +47,10 @@ a.navbar-brand {
 }
 
 .logo {
-    height: 100px;
+    max-height: 75px;
+    min-height: 48px;
+    min-width: 48px;
+    width: 100%;
 }
 
 
@@ -92,6 +95,7 @@ a.navbar-brand {
 .contact-us-top {
   position: absolute;
   top: 50px;
+  height: auto;
   width: 100%;
   font-family: 'OstrichSans-Black';
 
@@ -104,20 +108,20 @@ a.navbar-brand {
    width:100%;
 }
 
-.simplehelix {
-  max-height: 150px;
-  height: auto;
-}
-
-@media(max-width:992px){
-    .simplehelix {
-
-    }
-}
-
 .socialmedia {
-  margin-top: 75px;
+  margin-top: 50px;
   height: 50px;
+}
+
+@media (max-width:992px){
+    .socialmedia {
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+    .simplehelix {
+        margin-bottom: 10px;
+    }
 }
 
 hr {
