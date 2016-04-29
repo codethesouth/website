@@ -142,7 +142,7 @@
     						<a href="https://twitter.com/intent/follow?screen_name=code4huntsville"><i class="fa fa-4x fa-twitter wow bounceIn" data-wow-delay=".1s"></i></a>
     					</div>
     					<div class="col-md-2 col-xs-2 wow bounceIn simplehelix" >
-          					<a href="http://www.simplehelix.com"><img class="logo" src="/img/simplehelix.svg"></a>
+          					<a href="http://www.simplehelix.com"><img class="simplehelixlogo" src="/img/simplehelix.svg"></a>
           					<p class="hidden-sm hidden-xs">Website Hosting provided by: <a style="color:#444; font-family:OstrichSans-Black;" href="http://www.simplehelix.com">Simple Helix</a></p>
     					</div>
     					<div class="col-md-1 col-xs-2 socialmedia">

@@ -1,4 +1,4 @@
-﻿@font-face {
+@font-face {
     font-family: 'Lato-Hairline';
     src: url('../font/lato/Lato-Hairline.ttf') format('truetype');
 }
@@ -47,10 +47,20 @@ a.navbar-brand {
 }
 
 .logo {
+    max-height: 100px;
+    width: 100%;
+}
+
+.simplehelixlogo {
     max-height: 75px;
     min-height: 48px;
     min-width: 48px;
     width: 100%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
 }
 
 
@@ -159,7 +169,7 @@ hr.double-style {
 
 @media (max-width:992px){
   .get-involved-header {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 450;
   }
 
@@ -174,6 +184,8 @@ hr.double-style {
 
   .group-title {
     font-size: 18px;
+    margin: 10px 0 0 0;
+    padding: 0;
   }
 
   .fa {
@@ -201,7 +213,7 @@ hr.double-style {
   }
 
   .row-bottom-buffer {
-    margin-top: 50px;
+    margin-top: 25px;
     padding-bottom: 25px;
   }
 }
