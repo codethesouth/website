@@ -98,7 +98,12 @@ a.navbar-brand {
   height: auto;
   width: 100%;
   font-family: 'OstrichSans-Black';
+}
 
+@media(max-width:992px){
+    .contact-us-top > h1{
+      font-size: 24px;
+    }
 }
 
 .contact-us-bot {
@@ -152,6 +157,36 @@ hr.double-style {
   margin-top: 75px;
 }
 
+@media (max-width:992px){
+  .get-involved-header {
+    font-size: 24px;
+    font-weight: 450;
+  }
+
+  .get-involved-p {
+    font-size: 16px;
+    font-weight: 150;
+  }
+
+  .get-involved-buffer {
+    margin-top: 50px;
+  }
+
+  .group-title {
+    font-size: 18px;
+  }
+
+  .fa {
+    font-size: 48px;
+  }
+
+  .service-box > p {
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
 .row-top-buffer {
   margin-top: 100px;
 }
@@ -166,8 +201,8 @@ hr.double-style {
   }
 
   .row-bottom-buffer {
-    margin-top: 0;
-    padding-bottom: 100px;
+    margin-top: 50px;
+    padding-bottom: 25px;
   }
 }
 
