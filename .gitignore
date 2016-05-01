@@ -1,1 +1,3 @@
 node_modules/
+*.sln
+.vs/website/v14/.suo
