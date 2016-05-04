@@ -1,3 +1,8 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 @font-face {
     font-family: 'Lato-Hairline';
     src: url('../font/lato/Lato-Hairline.ttf') format('truetype');
@@ -23,7 +28,6 @@
     src: url('../font/roboto/Roboto-Medium.ttf') format('truetype');
 }
 
-
 .navbar {
 	margin-bottom: 0;
     font-family: OstrichSans-Black;
@@ -47,20 +51,14 @@ a.navbar-brand {
 }
 
 .logo {
-    max-height: 100px;
+    max-height: 150px;
     width: 100%;
 }
 
-.simplehelixlogo {
-    max-height: 75px;
-    min-height: 48px;
-    min-width: 48px;
-    width: 100%;
-    margin-left: 50%;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
+@media(max-width:768px){
+  .logo {
+      max-height: 100px;
+  }
 }
 
 
@@ -93,14 +91,177 @@ a.navbar-brand {
 #slogan {
     color: #eee;
     margin-bottom: 200px;
-    font-family: Lato-Light;
+    font-family: 'Lato-Light';
+    text-align: center;
+    width: 100%;
 }
 
-@media(min-width:480px){
+@media(max-width:768px){
     #slogan{
         margin-bottom: 0;
     }
 }
+
+
+#section1 {
+    background-image: url('/img/about-blur.jpg');
+    background-size: cover;
+    background-position:center;
+    padding: 0;
+}
+
+#section1:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255,255,255, 0.6);
+}
+
+#about-header {
+  position: absolute;
+  top: 125px;
+  width: 55%;
+  left: -2px;
+  border-radius: 0 15px 50px 0;
+  border: 2px solid #777;
+  margin: 0;
+  padding: 15px;
+  background: #e69b07;
+  background: -webkit-linear-gradient(#e69b07, #e6a23f); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#e69b07, #e6a23f); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#e69b07, #e6a23f); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#e69b07, #e6a23f); /* Standard syntax */
+}
+
+#about-title {
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  width: 100%;
+  text-align: right;
+  padding-right: 10%;
+  color: white;
+  font-size: 24px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+
+@media(max-width:768px){
+  #about-header {
+    width: 75%;
+  }
+  #about-title {
+    padding-right: 5%;
+  }
+}
+
+#about-inner-section {
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  position: absolute;
+  top: 200px;
+  width: 50%;
+  left: 10%;
+}
+
+#about-p {
+  color: #444;
+}
+
+.about-purpose {
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  position: absolute;
+  bottom: 50px;
+}
+
+@media (max-width:768px){
+  .about-purpose {
+    bottom: 10px;
+    font-size: 13px;
+  }
+
+  #purpose-title {
+    font-size: 24px;
+  }
+}
+
+#purpose-title {
+  font-family: 'OstrichSans-Black';
+  font-size: 36px;
+  text-align: center;
+}
+
+.purpose-item-li {
+  padding-bottom: 10px;
+}
+
+@media (max-width:768px){
+  #purpose-title {
+    font-size: 24px;
+  }
+}
+
+.row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+  flex-wrap: wrap;
+}
+.row > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
+
+.purpose-item-format {
+  border: 2px solid #777;
+  background: #e69b07;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.purpose-item-p {
+  padding: 15px;
+  color: white;
+  font-family: 'OstrichSans-Black', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: auto;
+}
+
+.item-curved {
+  border-radius: 15px 50px;
+}
+
+.item-curved-reverse {
+  border-radius: 50px 15px;
+}
+
+.item-oval {
+  border-radius: 15px;
+}
+
+@media (max-width:768px){
+  #about-header {
+    top: 100px;
+  }
+
+  #about-inner-section {
+    top: 175px;
+  }
+
+  #about-title {
+    font-size: 18px;
+    font-weight: 450;
+  }
+
+  #about-p {
+    font-size: 14px;
+    font-weight: 100;
+  }
+}
+
 
 .contact-us-top {
   position: absolute;
@@ -116,26 +277,40 @@ a.navbar-brand {
     }
 }
 
+.contact-us-footer {
+    position: absolute;
+    bottom:0;
+    width: 100%;
+}
+
 .contact-us-bot {
-   position:absolute;
-   bottom:0;
+   position:relative;
    margin-bottom: 15px;
    width:100%;
 }
 
+.simplehelix {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.simplehelixlogo {
+    max-height: 36px;
+    max-width: 36px;
+    width: 100%;
+}
+
 .socialmedia {
   margin-top: 50px;
-  height: 50px;
+  margin-bottom: 25px;
 }
 
 @media (max-width:480px){
     .socialmedia {
         margin-top: 0;
-        margin-bottom: 10px;
-    }
-
-    .simplehelix {
-        margin-bottom: 10px;
+        margin-bottom: 0;
     }
 }
 
@@ -179,7 +354,7 @@ hr.double-style {
   }
 
   .get-involved-buffer {
-    margin-top: 25px;
+    margin-top: 35px;
   }
 
   .group-title {
@@ -189,7 +364,7 @@ hr.double-style {
   }
 
   .fa {
-    font-size: 48px;
+    font-size: 36px;
   }
 
   .service-box > p {
