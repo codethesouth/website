@@ -174,7 +174,7 @@ a.navbar-brand {
 .about-purpose {
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
   position: absolute;
-  bottom: 50px;
+  bottom: 20%;
 }
 
 @media (max-width:768px){
@@ -194,6 +194,17 @@ a.navbar-brand {
   text-align: center;
 }
 
+
+li.purpose-item-li:before {
+  font-family: 'FontAwesome';
+  content: '\f10c';
+  margin:0 5px 0 -20px;
+  float: left;
+  color: black;
+  }
+
+ul > li.purpose-item-li { list-style-type: none; }
+
 .purpose-item-li {
   padding-bottom: 10px;
 }
@@ -204,14 +215,14 @@ a.navbar-brand {
   }
 }
 
-.row {
+.about-purpose > .row {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display:         flex;
   flex-wrap: wrap;
 }
-.row > [class*='col-'] {
+.about-purpose > .row > [class*='col-'] {
   display: flex;
   flex-direction: column;
 }
@@ -249,6 +260,8 @@ a.navbar-brand {
 
   #about-inner-section {
     top: 175px;
+    left: 15%;
+    width: 70%;
   }
 
   #about-title {
