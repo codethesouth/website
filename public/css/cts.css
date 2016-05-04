@@ -152,6 +152,7 @@ a.navbar-brand {
 
 @media(max-width:768px){
   #about-header {
+    top: 12.5%;
     width: 75%;
   }
   #about-title {
@@ -213,6 +214,9 @@ ul > li.purpose-item-li { list-style-type: none; }
   #purpose-title {
     font-size: 24px;
   }
+  .purpose-item-li {
+    padding-bottom: 0;
+  }
 }
 
 .about-purpose > .row {
@@ -254,14 +258,11 @@ ul > li.purpose-item-li { list-style-type: none; }
 }
 
 @media (max-width:768px){
-  #about-header {
-    top: 100px;
-  }
 
   #about-inner-section {
-    top: 175px;
-    left: 15%;
-    width: 70%;
+    top: 25%;
+    left: 5%;
+    width: 90%;
   }
 
   #about-title {

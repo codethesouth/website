@@ -17,7 +17,8 @@ var postToGoogle = function(idea, email) {
 };
 
 $(document).ready(function(){
-  $("#contact-us-button").click(function() {
+  $("#contact-us-button").click(function(event) {
+    event.preventDefault();
   	if ($('#inputEmail').val()) {
         postToGoogle($('#inputMessage').val(), $('#inputEmail').val());
         $('#email-form-group').removeClass('has-error');
