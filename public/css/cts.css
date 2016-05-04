@@ -260,7 +260,7 @@ ul > li.purpose-item-li { list-style-type: none; }
 @media (max-width:768px){
 
   #about-inner-section {
-    top: 25%;
+    top: 28%;
     left: 5%;
     width: 90%;
   }
@@ -366,7 +366,7 @@ hr.double-style {
   .get-involved-p {
     font-size: 16px;
     font-weight: 150;
-    margin-botom: 0;
+    margin-bottom: 0;
   }
 
   .get-involved-buffer {
