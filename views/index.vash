@@ -61,7 +61,7 @@
               <h3 id="about-title">We are Code The South</h3>
             </div>
             <div id="about-inner-section" class="wow fadeIn" data-wow-delay="0.5s">
-              <p class="get-involved-p" id="about-p">A 501(c)(3) non governmental organization formed to bring 21st century technology to the citizen-community experience</p>
+              <p class="get-involved-p" id="about-p">A 501(c)(3) non-governmental organization formed to bring 21st century technology to the citizen-community experience.</p>
             </div>
             <div class="hidden-xs about-purpose wow fadeIn" data-wow-delay="0.5s">
               <h3 id="purpose-title">Our Purpose:</h3>
@@ -116,8 +116,8 @@
     					<div class="service-box">
     						<i class="fa fa-4x fa-group wow bounceIn text-primary"></i>
     						<h3 class="group-title">Community Member</h3>
-    						<p class="text-muted">Writer, artist, organizer, storyteller or social media coordinator, we need you! Help organize meetings, steer comittees or coordinate projects. Simply fill out the
-                  <a href="https://docs.google.com/forms/d/1wkOoGgLyuDzO6MKjsB8yZhH1U1lfV5KGqJ9HWtLS6pA/edit?usp=drive_web" target="_blank">commitee candidate form</a>.</p>
+    						<p class="text-muted">Writer, artist, organizer, storyteller or social media coordinator, we need you! Help organize meetings, steer committees or coordinate projects. Simply fill out the
+                  <a href="https://docs.google.com/forms/d/1wkOoGgLyuDzO6MKjsB8yZhH1U1lfV5KGqJ9HWtLS6pA/edit?usp=drive_web" target="_blank">committee candidate form</a>.</p>
     					</div>
     				</div>
     				<div class="col-lg-offset-2 col-lg-3 col-xs-6 text-center">
@@ -143,7 +143,7 @@
     					<div class="service-box">
     						<i class="fa fa-4x fa-newspaper-o wow bounceIn text-primary" data-wow-delay=".2s"></i>
     						<h3 class="group-title">Local Government Worker</h3>
-    						<p class="text-muted">We need contacts to help us form new projects. Become a leason for CodeTheSouth.</p>
+    						<p class="text-muted">We need contacts to help us form new projects. Become a liaison for CodeTheSouth.</p>
     					</div>
     				</div>
     			</div>
