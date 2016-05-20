@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>@model.title</title>
+    <meta name="author" content="David Jones" />
+    <meta name="description" content="Official CodeTheSouth website." />
+    <meta name="keywords" content="fullpage,jquery,demo,scrollbar,scroll,bar,fullscreen,navigation,control arrows, dots" />
+    <meta name="Resource-type" content="Document" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="stylesheet" type="text/css" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/lib/bootstrap/dist/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" type="text/css" href="/lib/fullpage.js/jquery.fullPage.css" />
+    <link rel="stylesheet" type="text/css" href="/lib/wow/css/libs/animate.css" />
+    <link rel="stylesheet" type="text/css" href="/lib/font-awesome/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="/css/cts.css" />
+    <link rel="shortcut icon" href="/img/codethesouth-favicon.ico">
+</head>
+<body>
+	@html.block('nav')
+	@html.block('home')
+	@html.block('about')
+	@html.block('gettingstarted')
+	@html.block('contactus')
+
+	<script type="text/javascript" src="/lib/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/lib/fullpage.js/jquery.fullPage.js"></script>
+    <script type="text/javascript" src="/lib/jquery-easing/jquery.easing.min.js"></script>
+	  <script type="text/javascript" src="/lib/slimscroll/jquery.slimscroll.min.js"></script>
+    <script type="text/javascript" src="/lib/wow/dist/wow.min.js"></script>
+    <script type="text/javascript" src="/js/cts.js"></script>
+
+    <script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				anchors: ['home', 'about', 'gettingStarted', 'contactUs'],
+				sectionsColor: ['#fff', '#aaa', '#0a1823', '#aaa'],
+        scrollBar: true
+			});
+		});
+    </script>
+    <script>
+      new WOW().init();
+    </script>
+</body>
+</html>
