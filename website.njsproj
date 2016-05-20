@@ -189,7 +189,6 @@
     <Compile Include="public\lib\wow\spec\javascripts\libs\jquery.js" />
     <Compile Include="public\lib\wow\spec\javascripts\wow-spec.js" />
     <Compile Include="routes\index.js" />
-    <Compile Include="routes\users.js" />
     <Compile Include="bin\www" />
     <Content Include="package.json" />
     <Content Include="public\css\cts.css" />
@@ -437,7 +436,8 @@
     <Content Include="public\lib\wow\src\wow.coffee" />
     <Content Include="README.md" />
     <Content Include=".bowerrc" />
-    <Content Include="views\index.vash" />
+    <None Include="views\index.vash" />
+    <Content Include="views\layout.vash" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\" />
@@ -539,6 +539,8 @@
     <TypeScriptCompile Include="typings\body-parser\body-parser.d.ts" />
     <TypeScriptCompile Include="typings\body-parser\body-parser.d.ts" />
     <TypeScriptCompile Include="typings\body-parser\body-parser.d.ts" />
+    <TypeScriptCompile Include="typings\body-parser\body-parser.d.ts" />
+    <TypeScriptCompile Include="typings\cookie-parser\cookie-parser.d.ts" />
     <TypeScriptCompile Include="typings\cookie-parser\cookie-parser.d.ts" />
     <TypeScriptCompile Include="typings\cookie-parser\cookie-parser.d.ts" />
     <TypeScriptCompile Include="typings\cookie-parser\cookie-parser.d.ts" />
@@ -563,6 +565,8 @@
     <TypeScriptCompile Include="typings\debug\debug.d.ts" />
     <TypeScriptCompile Include="typings\debug\debug.d.ts" />
     <TypeScriptCompile Include="typings\debug\debug.d.ts" />
+    <TypeScriptCompile Include="typings\debug\debug.d.ts" />
+    <TypeScriptCompile Include="typings\express-serve-static-core\express-serve-static-core.d.ts" />
     <TypeScriptCompile Include="typings\express-serve-static-core\express-serve-static-core.d.ts" />
     <TypeScriptCompile Include="typings\express-serve-static-core\express-serve-static-core.d.ts" />
     <TypeScriptCompile Include="typings\express-serve-static-core\express-serve-static-core.d.ts" />
@@ -587,6 +591,8 @@
     <TypeScriptCompile Include="typings\express\express.d.ts" />
     <TypeScriptCompile Include="typings\express\express.d.ts" />
     <TypeScriptCompile Include="typings\express\express.d.ts" />
+    <TypeScriptCompile Include="typings\express\express.d.ts" />
+    <TypeScriptCompile Include="typings\mime\mime.d.ts" />
     <TypeScriptCompile Include="typings\mime\mime.d.ts" />
     <TypeScriptCompile Include="typings\mime\mime.d.ts" />
     <TypeScriptCompile Include="typings\mime\mime.d.ts" />
@@ -611,6 +617,8 @@
     <TypeScriptCompile Include="typings\morgan\morgan.d.ts" />
     <TypeScriptCompile Include="typings\morgan\morgan.d.ts" />
     <TypeScriptCompile Include="typings\morgan\morgan.d.ts" />
+    <TypeScriptCompile Include="typings\morgan\morgan.d.ts" />
+    <TypeScriptCompile Include="typings\node\node.d.ts" />
     <TypeScriptCompile Include="typings\node\node.d.ts" />
     <TypeScriptCompile Include="typings\node\node.d.ts" />
     <TypeScriptCompile Include="typings\node\node.d.ts" />
@@ -635,6 +643,8 @@
     <TypeScriptCompile Include="typings\serve-favicon\serve-favicon.d.ts" />
     <TypeScriptCompile Include="typings\serve-favicon\serve-favicon.d.ts" />
     <TypeScriptCompile Include="typings\serve-favicon\serve-favicon.d.ts" />
+    <TypeScriptCompile Include="typings\serve-favicon\serve-favicon.d.ts" />
+    <TypeScriptCompile Include="typings\serve-static\serve-static.d.ts" />
     <TypeScriptCompile Include="typings\serve-static\serve-static.d.ts" />
     <TypeScriptCompile Include="typings\serve-static\serve-static.d.ts" />
     <TypeScriptCompile Include="typings\serve-static\serve-static.d.ts" />
@@ -659,6 +669,8 @@
     <TypeScriptCompile Include="typings\stylus\stylus.d.ts" />
     <TypeScriptCompile Include="typings\stylus\stylus.d.ts" />
     <TypeScriptCompile Include="typings\stylus\stylus.d.ts" />
+    <TypeScriptCompile Include="typings\stylus\stylus.d.ts" />
+    <TypeScriptCompile Include="typings\tsd.d.ts" />
     <TypeScriptCompile Include="typings\tsd.d.ts" />
     <TypeScriptCompile Include="typings\tsd.d.ts" />
     <TypeScriptCompile Include="typings\tsd.d.ts" />
