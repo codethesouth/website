@@ -148,50 +148,46 @@
 })
 
 @html.extend('layout', function(model) {
-  @html.block('contactus', function(model) {
-    <div class="section" id="section3">
-		  <div class="row" style=" style="margin-right:0; margin-left: 0;"">
-        <div class="contact-us-top">
-          <h1>Contact us, join the mailing list, or submit an idea!</h1>
-        </div>
+	@html.block('contactus', function(model) {
+		<div class="section" id="section3">
+			<div class="row" style=" style=" margin-right:0; margin-left: 0; "">
+				<div class="contact-us-top">
+					<h1>Contact us, join the mailing list, or submit an idea!</h1>
+				</div>
 			</div>
-	    <div class="row"  style="margin-right:0; margin-left: 0; max-width:100%;">
-        <div class="container-fluid">
-          <div class="col-md-offset-4 col-md-4 col-sm-offset-1 col-sm-10">
-            <form id="input-form">
-              <div class="form-group" id="email-form-group">
-                <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control" id="inputEmail" placeholder="Email">
-              </div>
-              <label for="message">Message</label>
-              <textarea class="form-control" id="inputMessage" cols="30" rows="6"></textarea>
-              <br>
-              <button type="submit" class="btn btn-warning btn-block" id="contact-us-button">Submit</button>
-            </form>
-          </div>
-        </div>
+			<div class="row" style="margin-right:0; margin-left: 0; max-width:100%;">
+				<div class="container-fluid">
+					<div class="col-md-offset-4 col-md-4 col-sm-offset-1 col-sm-10">
+						<form id="input-form">
+							<div class="form-group" id="email-form-group">
+								<label for="exampleInputEmail1">Email address</label>
+								<input type="email" class="form-control" id="inputEmail" placeholder="Email">
+							</div>
+							<label for="message">Message</label>
+							<textarea class="form-control" id="inputMessage" cols="30" rows="6"></textarea>
+							<br>
+							<button type="submit" class="btn btn-warning btn-block" id="contact-us-button">Submit</button>
+						</form>
+					</div>
+				</div>
 			</div>
-        <div class="row contact-us-footer" style="margin-right:0; margin-left: 0;">
-          <div class="contact-us-bot">
-      			<div class="col-md-offset-4 col-md-1 col-xs-offset-2 col-xs-2 socialmedia">
-      				<a href="https://www.facebook.com/groups/code4huntsville" target="_blank"><i class="fa fa-4x fa-facebook wow bounceIn" data-wow-delay=".2s"></i></a>
-      			</div>
-      			<div class="col-md-1 col-xs-2 socialmedia">
-      				<a href="https://twitter.com/intent/follow?screen_name=code4huntsville" target="_blank"><i class="fa fa-4x fa-twitter wow bounceIn"></i></a>
-      			</div>
-      			<div class="col-md-1 col-xs-2 socialmedia">
-      				<a href="https://github.com/codeforhuntsville" target="_blank"><i class="fa fa-4x fa-github wow bounceIn"></i></a>
-      			</div>
-      			<div class="col-md-1 col-xs-2 socialmedia">
-      				<a href="https://codeforhuntsville.slack.com" target="_blank"><i class="fa fa-4x fa-slack wow bounceIn" data-wow-delay=".2s"></i></a>
-      			</div>
-          </div>
-          <div class="simplehelix">
-      		<div class="col-md-offset-2 col-md-8 col-xs-offset-1 col-xs-10 wow bounceIn" >
-            <p>Website Hosting provided by <a href="http://www.simplehelix.com" target="_blank"><img class="simplehelixlogo" src="/img/simplehelix.svg"></a></p>
-      		</div>
-        </div>
-      </div>
-    </div>
+			<footer>
+				<div class="container">
+					<ul class="social text-center">
+						<li><a href="https://www.facebook.com/groups/code4huntsville" target="_blank"><i class="fa fa-lg fa-facebook"></i></a></li>
+						<li><a href="https://github.com/codeforhuntsville" target="_blank"><i class="fa fa-lg fa-github"></i></a></li>
+						<li><a href="https://codeforhuntsville.slack.com" target="_blank"><i class="fa fa-lg fa-slack"></i></a></li>
+					</ul>
+
+					<p class="text-center">&copy;
+						<script type="text/javascript">
+							document.write(new Date().getFullYear());
+						</script> - All Rights Reserved</p>
+					<p class="text-center">Website Hosting provided by
+						<a href="http://www.simplehelix.com" target="_blank"><img class="simplehelixlogo" src="/img/simplehelix.svg"></a>
+					</p>
+				</div>
+			</footer>
+		</div>
   })
 })
