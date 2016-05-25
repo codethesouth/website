@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "postinstall": "grunt bower && grunt default"
+    "postinstall": "grunt combine"
   },
   "description": "CodeTheSouth",
   "contributors": [
@@ -41,4 +41,5 @@
     "grunt-contrib-uglify": "^1.0.1",
     "grunt-contrib-watch": "^1.0.0"
   }
+, "-vs-binding":{"ProjectOpened":["install"]}
 }

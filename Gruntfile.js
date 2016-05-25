@@ -1,4 +1,5 @@
-﻿/*global module */
+﻿/// <binding BeforeBuild='default' />
+/*global module */
 module.exports = function (grunt) {
     "use strict";
     grunt.initConfig({
@@ -11,6 +12,7 @@ module.exports = function (grunt) {
                 options: {
                     "targetDir": "./public/lib",
                     "copy": true,
+                    "cleanup": true,
                     "install": true
                 }
             }
@@ -22,7 +24,15 @@ module.exports = function (grunt) {
                 dest: "public/lib/dist/main.css"
             },
             js: {
-                src: ["public/lib/**/jquery.js", "public/lib/js/**/*.js", "public/js/cts.js"],
+                src: [
+                    "public/lib/js/jquery/jquery.js",
+                    "public/lib/js/bootstrap/bootstrap.js",
+                    "public/lib/js/fullpage.js/jquery.fullpage.js",
+                    "public/lib/js/jquery-easing-original/jquery.easing.js",
+                    "public/lib/js/slimscroll/jquery.slimscroll.js",
+                    "public/lib/js/wow/wow.js",
+                    "public/js/cts.js"
+                    ],
                 dest: "public/lib/dist/main.js"
             }
         },
@@ -68,6 +78,7 @@ module.exports = function (grunt) {
 
     // define the default task that can be run just by typing "grunt" on the command line
     // the array should contains the names of the tasks to run
-    grunt.registerTask("default", [ "concat", "cssmin", "uglify", "copy"]);
+    grunt.registerTask("default", [ "bower", "concat", "cssmin", "uglify", "copy"]);
+    grunt.registerTask("combine", [ "concat", "cssmin", "uglify", "copy"]);
     grunt.registerInitTask("install", ["bower"]);
 };
