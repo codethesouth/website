@@ -20,7 +20,12 @@ module.exports = function (grunt) {
 
         concat: {
             css: {
-                src: ["public/lib/css/**/*.css", "public/css/cts.css"],
+                src: [
+                    "public/lib/css/bootstrap/bootstrap.css",
+                    "public/lib/css/fontawesome/font-awesome.css",
+                    "public/lib/css/fullpage.js/jquery.fullpage.css",
+                    "public/lib/css/wow/animate.css",
+                    "public/css/cts.css"],
                 dest: "public/lib/dist/main.css"
             },
             js: {
