@@ -27,9 +27,7 @@
       @html.block('home')
     </div><!-- fullpage -->
   })
-})
 
-@html.extend('layout', function(model) {
   @html.block('home', function(model) {
     <div class="section" id="section0">
 			<div class="col-md-offset-7 col-md-3">
@@ -42,9 +40,7 @@
 			</div>
 		</div>
   })
-})
 
-@html.extend('layout', function(model) {
   @html.block('about', function(model) {
     <div class="section" id="section1">
       <div id="about-header" class="wow slideInLeft" data-wow-duration="0.7s">
@@ -91,9 +87,7 @@
       </div>
     </div>
   })
-})
 
-@html.extend('layout', function(model) {
   @html.block('gettingstarted', function(model) {
     <div class="section" id="section2">
       <div class="container-fluid get-involved-buffer">
@@ -145,9 +139,7 @@
       </div>
     </div>
   })
-})
 
-@html.extend('layout', function(model) {
 	@html.block('contactus', function(model) {
 		<div class="section" id="section3">
 			<div class="row" style=" style=" margin-right:0; margin-left: 0; "">
