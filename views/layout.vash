@@ -45,6 +45,7 @@
 				sectionsColor: ['#fff', '#aaa', '#0a1823', '#aaa'],
         scrollBar: true
 			});
+		
 		});
     </script>
     <script>

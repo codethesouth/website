@@ -25,7 +25,8 @@ module.exports = function (grunt) {
                     "public/lib/css/fontawesome/font-awesome.css",
                     "public/lib/css/fullpage.js/jquery.fullpage.css",
                     "public/lib/css/wow/animate.css",
-                    "public/css/cts.css"],
+                    "public/css/cts.css"
+                    ],
                 dest: "public/lib/dist/main.css"
             },
             js: {
