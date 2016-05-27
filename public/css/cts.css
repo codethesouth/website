@@ -424,6 +424,7 @@ footer {
     padding-top: 50px;
     padding-bottom: 50px;
     background: #1F2C37;
+    /* min-height: 70vh; */
 }
 
 .social {

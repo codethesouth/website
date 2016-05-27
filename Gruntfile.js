@@ -67,6 +67,11 @@ module.exports = function (grunt) {
                 dest: "public/lib/fonts/",
                 filter: "isFile"
             }
+        },
+
+        watch: {
+            files: [ "public/css/cts.css", "public/js/cts.js"],
+            tasks: [ "concat", "cssmin", "uglify" ]
         }
     });
 
@@ -84,7 +89,7 @@ module.exports = function (grunt) {
 
     // define the default task that can be run just by typing "grunt" on the command line
     // the array should contains the names of the tasks to run
-    grunt.registerTask("default", [ "bower", "concat", "cssmin", "uglify", "copy"]);
+    grunt.registerTask("default", [ "bower", "concat", "cssmin", "uglify", "copy", "watch"]);
     grunt.registerTask("combine", [ "concat", "cssmin", "uglify", "copy"]);
     grunt.registerInitTask("install", ["bower"]);
 };
