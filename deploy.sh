@@ -1,4 +1,4 @@
 #!/bin/bash
 set -ev
 
-python ftp_deploy.python
+python ftp_deploy.py
