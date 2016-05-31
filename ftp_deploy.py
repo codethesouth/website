@@ -17,6 +17,7 @@ password = os.environ( "CTSWEBSITE_PASSWORD" )
 ####################################################
 def connect():
     # Connect to the server
+    print "Starting FTP Connection"
     ftp = FTP()
     ftp.connect( server, port )
     ftp.login( username, password )
@@ -27,14 +28,18 @@ def connect():
 ####################################################
 def upload_current_directory( session ):
     # Get the current working directory
+    print "Getting current working directory"
     path = os.getcwd()
 
     # Get all files/folders in the current directory
+    print "Getting all files/folders in the current directory"
     files = os.listdir( path )
     os.chdir( path )
 
     # Upload the files for the current directory
+    print "List of files:"
     for file in files:
+        print file
         if os.path.isfile( path + r'\{}'.format( file ) ):
             fh = open( file, "rb" )
             session.storbinary( 'STOR %s' % file, fh )
@@ -42,9 +47,11 @@ def upload_current_directory( session ):
         elif os.path.isdir(path + r'\{}'.format( file ) ):
             session.mkd( file )
             session.cwd( file )
-            uploadThis( path + r'\{}'.format( file) )
+            upload_current_directory( path + r'\{}'.format( file ) )
     session.cwd( ".." )
     os.chdir( ".." )
+    print "Completed file/folder upload"
+    return
 
 ####################################################
 #      Connect to Server & Upload All Files        #
