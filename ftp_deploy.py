@@ -1,4 +1,4 @@
-import FTP from ftplib
+from ftplib import FTP
 import os
 
 ####################################################
