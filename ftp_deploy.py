@@ -6,8 +6,8 @@ import os
 ####################################################
 server = "199.231.231.221"
 port = "22"
-username = os.environ( "CTSWEBSITE_USERNAME" )
-password = os.environ( "CTSWEBSITE_PASSWORD" )
+username = os.environ.get( "CTSWEBSITE_USERNAME" )
+password = os.environ.get( "CTSWEBSITE_PASSWORD" )
 
 # username="$CTSWEBSITE_USERNAME"
 # password="$CTSWEBSITE_PASSWORD"
