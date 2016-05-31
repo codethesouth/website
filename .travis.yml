@@ -4,6 +4,6 @@ node_js:
 
 deploy:
   provider: script
-  script: deploy.sh
+  script: bash deploy.sh
   on:
     branch: "tyler_dev#9"
