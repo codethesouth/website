@@ -3,8 +3,7 @@ node_js:
   - "4.1"
 
 before_script:
-  - pip install --upgrade pip
-  - pip install pysftp
+  - sudo pip install pysftp
 
 deploy:
   provider: script
