@@ -17,7 +17,7 @@ password = os.environ.get( "CTSWEBSITE_PASSWORD" )
 
 # Connect to the server
 print "Starting SFTP Connection"
-sftp = pysftp.Connection( server, username, password )
+sftp = pysftp.Connection( server, username=username, password=password )
 
 # Upload files to the server
 try:
