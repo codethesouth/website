@@ -14,14 +14,15 @@ password = os.environ.get( "CTSWEBSITE_PASSWORD" )
 ####################################################
 #                FTP Connection                    #
 ####################################################
-    # Connect to the server
-    print "Starting SFTP Connection"
-    sftp = pysftp.Connection( server, username, password )
 
-    # Upload files to the server
-    try:
-        print "Starting recursive copy of files"
-        path = os.getcwd()
-        sftp.put_r( path, 'test', preserve_mtime=True)
-    except:
-        print "Failed to copy file(s) to the server"
+# Connect to the server
+print "Starting SFTP Connection"
+sftp = pysftp.Connection( server, username, password )
+
+# Upload files to the server
+try:
+    print "Starting recursive copy of files"
+    path = os.getcwd()
+    sftp.put_r( path, 'test', preserve_mtime=True)
+except:
+    print "Failed to copy file(s) to the server"
