@@ -22,7 +22,6 @@ sftp = pysftp.Connection( server, username=username, password=password )
 # Upload files to the server
 try:
     print "Starting recursive copy of files"
-    path = os.getcwd()
-    sftp.put_r( "./", 'test', preserve_mtime=True)
+    sftp.put_d( "./", 'test', preserve_mtime=True)
 except:
     print "Failed to copy file(s) to the server"
