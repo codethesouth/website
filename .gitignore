@@ -1,6 +1,10 @@
+################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
 node_modules/
 .vs/
 *.sln
+/.vs/CodeTheSouth/v14/.suo
 .vs/website/v14/.suo
 public/lib/css
 public/lib/fonts
