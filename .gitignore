@@ -9,3 +9,5 @@ node_modules/
 public/lib/css
 public/lib/fonts
 public/lib/js
+/.vs/Image Optimizer/cache-lossless.txt
+.ntvs_analysis.dat

@@ -1,0 +1,4 @@
+C:\Users\Tyler\Documents\Visual Studio 2015\Projects\website\obj\Debug\website.njsprojResolveAssemblyReference.cache
+C:\Users\Tyler\Documents\Visual Studio 2015\Projects\website\bin\Microsoft.NodejsTools.WebRole.dll
+C:\Users\Tyler\Documents\Visual Studio 2015\Projects\website\src\obj\Debug\website.njsprojResolveAssemblyReference.cache
+C:\Users\Tyler\Documents\Visual Studio 2015\Projects\website\src\bin\Microsoft.NodejsTools.WebRole.dll
