@@ -21,6 +21,7 @@ sftp = pysftp.Connection( server, username=username, password=password )
 
 # Upload files to the server
 print "Starting copying the current directory"
-sftp.put_r( "src", "test/", preserve_mtime=True)
+sftp.put_d( ".bowerrc", "test/", preserve_mtime=True)
+#sftp.put_r( "src", "test/", preserve_mtime=True)
 # except:
 # print "Failed to copy file(s) to the server"
