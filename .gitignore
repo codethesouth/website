@@ -5,5 +5,3 @@ node_modules/
 public/lib/css
 public/lib/fonts
 public/lib/js
-public/lib/dist/main.css
-public/lib/dist/main.js
