@@ -9,4 +9,4 @@ deploy:
   provider: script
   script: deploy.sh
   on:
-    branch: "tyler_dev#9"
+    branch: "release1.0"
