@@ -28,6 +28,8 @@ for file in files:
 
 for folder in folders:
     print "Copying the folder: " + folder
-    sftp.mkdir( folder )
+    if sftp.exists( folder ) == False:
+        sftp.mkdir( folder )
+
     folder = folder + "/"
     sftp.put_r( folder, folder, preserve_mtime=True )
