@@ -1,0 +1,197 @@
+@html.extend('layout', function(model) {
+  @html.block('nav', function(model) {
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	    <div class="container-fluid">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+		        <span class="sr-only">Toggle navigation</span>
+			    <span class="icon-bar"></span>
+			    <span class="icon-bar"></span>
+			    <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="#home">
+            <img class="logoicon" src="/img/codethesouth-icon-rgb.svg">
+		      </a>
+		    </div>
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav navbar-right">
+			    <li><a href="#about">About</a></li>
+			    <li><a href="#gettingStarted">Getting Started</a></li>
+			    <li><a href="#contactUs">Contact Us</a></li>
+		      </ul>
+		    </div><!-- .navbar-collapse -->
+	    </div><!-- .container-fluid -->
+	  </nav>
+    <div id="fullpage">
+      @html.block('home')
+    </div><!-- fullpage -->
+  })
+
+  @html.block('home', function(model) {
+    <div class="section" id="section0">
+			<div class="col-md-offset-7 col-md-3">
+				<div class="row">
+					<img class="logo" src="/img/codethesouth-logo-rgb-999.svg">
+				</div>
+				<div class="row">
+					<p id="slogan">Building software solutions for the community.</p>
+				</div>
+			</div>
+		</div>
+  })
+
+  @html.block('about', function(model) {
+    <div class="section container" id="section1">
+
+      <div id="about-header" class="wow slideInLeft" data-wow-duration="0.7s">
+        <h3 id="about-title">We are Code The South</h3>
+      </div>
+
+      <div id="about-inner-section" class="wow fadeIn" data-wow-delay="0.5s">
+				<div>
+        	<p class="get-involved-p" id="about-p">A non-governmental non-profit organization, applying for 501(c)(3) status, formed to bring 21st century technology to the citizen-community experience.</p>
+      	</div>
+			</div>
+
+      <div class="about-purpose wow fadeIn" data-wow-delay="0.5s">
+				<div class="row">
+        	<h3 id="purpose-title" class="col-sm-12 text-center">Our Purpose:</h3>
+				</div>
+        <div class="row">
+          <div class="col-md-offset-2 col-md-2 col-xs-4 purpose-item-format item-oval">
+            <p class="purpose-item-p">Encourage and support development of public and private innovation in the field of civic technologies.</p>
+          </div>
+          <div class="col-md-offset-1 col-md-2 col-xs-4 purpose-item-format item-oval">
+            <p class="purpose-item-p">Promote effective and efficient technologies for civic interaction.</p>
+          </div>
+          <div class="col-md-offset-1 col-md-2 col-xs-4 purpose-item-format item-oval">
+            <p class="purpose-item-p">Inform area residents of metro government data sources.</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-offset-2 col-md-2 col-xs-4 purpose-item-format item-oval">
+            <p class="purpose-item-p">Empower citizen influence by working with public policy makers to expand and enhance open data standards.</p>
+          </div>
+          <div class="col-md-offset-1 col-md-2 col-xs-4 purpose-item-format item-oval">
+            <p class="purpose-item-p">Provide educational opportunity to those wishing to learn about application design and implementation.</p>
+          </div>
+          <div class="col-md-offset-1 col-md-2 col-xs-4 purpose-item-format item-oval">
+            <p class="purpose-item-p">Garner resources for and to maintain and sustain viability of Code The South.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="visible-xs about-purpose">
+        <h3 id="purpose-title" class="wow fadeIn" data-wow-delay="0.5s">Our Purpose:</h3>
+        <ul>
+          <li class="wow fadeIn purpose-item-li" data-wow-delay="0.5s">Encourage and support development of public and private innovation in the field of civic technologies.</li>
+          <li class="wow fadeIn purpose-item-li" data-wow-delay="0.5s">Promote effective and efficient technologies for civic interaction.</li>
+          <li class="wow fadeIn purpose-item-li" data-wow-delay="0.5s">Inform area residents of metro government data sources.</li>
+          <li class="wow fadeIn purpose-item-li" data-wow-delay="0.5s">Empower citizen influence by working with public policy makers to expand and enhance open data standards.</li>
+          <li class="wow fadeIn purpose-item-li" data-wow-delay="0.5s">Provide educational opportunity to those wishing to learn about application design and implementation.</li>
+          <li class="wow fadeIn purpose-item-li" data-wow-delay="0.5s">Garner resources for and to maintain and sustain viability of Code The South.</li>
+        </ul>
+      </div>
+    </div>
+  })
+
+  @html.block('gettingstarted', function(model) {
+    <div class="section" id="section2">
+      <div class="container-fluid get-involved-buffer">
+        <div class="row">
+    	    <div class="col-lg-12 text-center">
+    		    <h2 class="get-involved-header">Do you want to get involved?</h2>
+      		    <p class="get-involved-p">Join a group that fits your expertise.</p>
+    		    <hr class="double-style">
+    	    </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row row-top-buffer">
+    	    <div class="col-lg-offset-2 col-lg-3 col-sm-6 text-center">
+    		    <div class="service-box">
+    			    <i class="fa fa-4x fa-group wow bounceIn text-primary"></i>
+    			    <h3 class="group-title">Community Member</h3>
+    			    <p class="text-muted">Writer, artist, organizer, storyteller or social media coordinator, we need you! Help organize meetings, steer committees or coordinate projects. Simply fill out the
+                <a href="https://docs.google.com/forms/d/1wkOoGgLyuDzO6MKjsB8yZhH1U1lfV5KGqJ9HWtLS6pA/edit?usp=drive_web" target="_blank">committee candidate form</a>.</p>
+    		    </div>
+    	    </div>
+    	    <div class="col-lg-offset-2 col-lg-3 col-xs-6 text-center">
+    	      <div class="service-box">
+    		      <i class="fa fa-4x fa-keyboard-o wow bounceIn text-primary"></i>
+    		      <h3 class="group-title">Software Developer</h3>
+    		      <p class="text-muted">Can you write code? Help us build apps to make the future better. Check out our
+                <a href="https://github.com/codeforhuntsville" target="_blank">GitHub</a> page to help.</p>
+    	      </div>
+          </div>
+	      </div>
+	    </div>
+      <div class="container">
+    	  <div class="row row-bottom-buffer">
+    		  <div class="col-lg-offset-2 col-lg-3 col-xs-6 text-center">
+    			  <div class="service-box">
+    				  <i class="fa fa-4x fa-recycle wow bounceIn text-primary" data-wow-delay=".2s"></i>
+    				  <h3 class="group-title">Nonprofit Agency</h3>
+    				  <p class="text-muted">We support nonprofit agencies! If you are involved with an NGO or nonprofit organization please contact us.</p>
+    			  </div>
+    		  </div>
+    		  <div class="col-lg-offset-2 col-lg-3 col-xs-6 text-center">
+    			  <div class="service-box">
+    				  <i class="fa fa-4x fa-newspaper-o wow bounceIn text-primary" data-wow-delay=".2s"></i>
+    				  <h3 class="group-title">Local Government Worker</h3>
+    				  <p class="text-muted">We need contacts to help us form new projects. Become a liaison for CodeTheSouth.</p>
+    			  </div>
+    		  </div>
+    	  </div>
+      </div>
+    </div>
+  })
+
+	@html.block('contactus', function(model) {
+		<div class="section" id="section3">
+			<div class="contact-us-top">
+				<h1>Contact us, join the mailing list, or submit an idea!</h1>
+			</div> <!-- .contact-us-top -->
+
+			<div class="container">
+				<div class="row">
+					<div class="col-md-offset-4 col-md-4 col-sm-offset-1 col-sm-10">
+						<form id="input-form">
+							<div class="form-group" id="email-form-group">
+								<label for="exampleInputEmail1">Email address</label>
+								<input type="email" class="form-control" id="inputEmail" placeholder="Email">
+							</div> <!-- form-group -->
+							<label for="message">Message</label>
+							<textarea class="form-control" id="inputMessage" cols="30" rows="6"></textarea>
+							<br>
+							<button type="submit" class="btn btn-warning btn-block" id="contact-us-button">Submit</button>
+						</form>
+
+					</div> <!-- .col-md-offset-4 .col-md-4 .col-sm-offset-1 .col-sm-10 -->
+				</div> <!-- .row -->
+			</div> <!-- .container -->
+
+
+		<footer>
+			<div class="container">
+				<ul class="social text-center">
+					<li><a href="https://www.facebook.com/groups/code4huntsville" target="_blank"><i class="fa fa-lg fa-facebook"></i></a></li>
+					<li><a href="https://twitter.com/intent/follow?screen_name=code4huntsville" target="_blank"><i class="fa fa-lg fa-twitter"></i></a></li>
+					<li><a href="https://github.com/codeforhuntsville" target="_blank"><i class="fa fa-lg fa-github"></i></a></li>
+					<li><a href="https://codeforhuntsville.slack.com" target="_blank"><i class="fa fa-lg fa-slack"></i></a></li>
+				</ul>
+
+				<p class="text-center">&copy;
+					<script type="text/javascript">
+						document.write(new Date().getFullYear());
+					</script> - All Rights Reserved</p>
+				<p class="text-center">Website Hosting provided by
+					<a href="http://www.simplehelix.com" target="_blank"><img class="simplehelixlogo" src="/img/simplehelix.svg"></a>
+				</p>
+			</div> <!-- .container -->
+		</div> <!-- #section3 -->
+		</footer>
+  })
+})
