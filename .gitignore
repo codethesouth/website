@@ -1,3 +1,7 @@
 node_modules/
+.vs/
 *.sln
 .vs/website/v14/.suo
+public/lib/css
+public/lib/fonts
+public/lib/js

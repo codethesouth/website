@@ -27,9 +27,7 @@
       @html.block('home')
     </div><!-- fullpage -->
   })
-})
 
-@html.extend('layout', function(model) {
   @html.block('home', function(model) {
     <div class="section" id="section0">
 			<div class="col-md-offset-7 col-md-3">
@@ -42,42 +40,49 @@
 			</div>
 		</div>
   })
-})
 
-@html.extend('layout', function(model) {
   @html.block('about', function(model) {
-    <div class="section" id="section1">
+    <div class="section container" id="section1">
+
       <div id="about-header" class="wow slideInLeft" data-wow-duration="0.7s">
         <h3 id="about-title">We are Code The South</h3>
       </div>
+
       <div id="about-inner-section" class="wow fadeIn" data-wow-delay="0.5s">
-        <p class="get-involved-p" id="about-p">A non-governmental non-profit organization, applying for 501(c)(3) status, formed to bring 21st century technology to the citizen-community experience.</p>
-      </div>
-      <div class="hidden-xs about-purpose wow fadeIn" data-wow-delay="0.5s">
-        <h3 id="purpose-title">Our Purpose:</h3>
-        <div class="row" id="about-row-1">
-          <div class="col-md-offset-2 col-md-2 col-xs-4 purpose-item-format item-curved-reverse">
+				<div>
+        	<p class="get-involved-p" id="about-p">A non-governmental non-profit organization, applying for 501(c)(3) status, formed to bring 21st century technology to the citizen-community experience.</p>
+      	</div>
+			</div>
+
+      <div class="about-purpose wow fadeIn" data-wow-delay="0.5s">
+				<div class="row">
+        	<h3 id="purpose-title" class="col-sm-12 text-center">Our Purpose:</h3>
+				</div>
+        <div class="row">
+          <div class="col-md-offset-2 col-md-2 col-xs-4 purpose-item-format item-oval">
             <p class="purpose-item-p">Encourage and support development of public and private innovation in the field of civic technologies.</p>
           </div>
           <div class="col-md-offset-1 col-md-2 col-xs-4 purpose-item-format item-oval">
             <p class="purpose-item-p">Promote effective and efficient technologies for civic interaction.</p>
           </div>
-          <div class="col-md-offset-1 col-md-2 col-xs-4 purpose-item-format item-curved">
+          <div class="col-md-offset-1 col-md-2 col-xs-4 purpose-item-format item-oval">
             <p class="purpose-item-p">Inform area residents of metro government data sources.</p>
           </div>
         </div>
-        <div class="row" id="about-row-2">
-          <div class="col-md-offset-2 col-md-2 col-xs-4 purpose-item-format item-curved">
+
+        <div class="row">
+          <div class="col-md-offset-2 col-md-2 col-xs-4 purpose-item-format item-oval">
             <p class="purpose-item-p">Empower citizen influence by working with public policy makers to expand and enhance open data standards.</p>
           </div>
           <div class="col-md-offset-1 col-md-2 col-xs-4 purpose-item-format item-oval">
             <p class="purpose-item-p">Provide educational opportunity to those wishing to learn about application design and implementation.</p>
           </div>
-          <div class="col-md-offset-1 col-md-2 col-xs-4 purpose-item-format item-curved-reverse">
+          <div class="col-md-offset-1 col-md-2 col-xs-4 purpose-item-format item-oval">
             <p class="purpose-item-p">Garner resources for and to maintain and sustain viability of Code The South.</p>
           </div>
         </div>
       </div>
+
       <div class="visible-xs about-purpose">
         <h3 id="purpose-title" class="wow fadeIn" data-wow-delay="0.5s">Our Purpose:</h3>
         <ul>
@@ -91,9 +96,7 @@
       </div>
     </div>
   })
-})
 
-@html.extend('layout', function(model) {
   @html.block('gettingstarted', function(model) {
     <div class="section" id="section2">
       <div class="container-fluid get-involved-buffer">
@@ -107,7 +110,7 @@
       </div>
       <div class="container">
         <div class="row row-top-buffer">
-    	    <div class="col-lg-offset-2 col-lg-3 col-xs-6 text-center">
+    	    <div class="col-lg-offset-2 col-lg-3 col-sm-6 text-center">
     		    <div class="service-box">
     			    <i class="fa fa-4x fa-group wow bounceIn text-primary"></i>
     			    <h3 class="group-title">Community Member</h3>
@@ -145,53 +148,50 @@
       </div>
     </div>
   })
-})
 
-@html.extend('layout', function(model) {
-  @html.block('contactus', function(model) {
-    <div class="section" id="section3">
-		  <div class="row" style=" style="margin-right:0; margin-left: 0;"">
-        <div class="contact-us-top">
-          <h1>Contact us, join the mailing list, or submit an idea!</h1>
-        </div>
-			</div>
-	    <div class="row"  style="margin-right:0; margin-left: 0; max-width:100%;">
-        <div class="container-fluid">
-          <div class="col-md-offset-4 col-md-4 col-sm-offset-1 col-sm-10">
-            <form id="input-form">
-              <div class="form-group" id="email-form-group">
-                <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control" id="inputEmail" placeholder="Email">
-              </div>
-              <label for="message">Message</label>
-              <textarea class="form-control" id="inputMessage" cols="30" rows="6"></textarea>
-              <br>
-              <button type="submit" class="btn btn-warning btn-block" id="contact-us-button">Submit</button>
-            </form>
-          </div>
-        </div>
-			</div>
-        <div class="row contact-us-footer" style="margin-right:0; margin-left: 0;">
-          <div class="contact-us-bot">
-      			<div class="col-md-offset-4 col-md-1 col-xs-offset-2 col-xs-2 socialmedia">
-      				<a href="https://www.facebook.com/groups/code4huntsville" target="_blank"><i class="fa fa-4x fa-facebook wow bounceIn" data-wow-delay=".2s"></i></a>
-      			</div>
-      			<div class="col-md-1 col-xs-2 socialmedia">
-      				<a href="https://twitter.com/intent/follow?screen_name=code4huntsville" target="_blank"><i class="fa fa-4x fa-twitter wow bounceIn"></i></a>
-      			</div>
-      			<div class="col-md-1 col-xs-2 socialmedia">
-      				<a href="https://github.com/codeforhuntsville" target="_blank"><i class="fa fa-4x fa-github wow bounceIn"></i></a>
-      			</div>
-      			<div class="col-md-1 col-xs-2 socialmedia">
-      				<a href="https://codeforhuntsville.slack.com" target="_blank"><i class="fa fa-4x fa-slack wow bounceIn" data-wow-delay=".2s"></i></a>
-      			</div>
-          </div>
-          <div class="simplehelix">
-      		<div class="col-md-offset-2 col-md-8 col-xs-offset-1 col-xs-10 wow bounceIn" >
-            <p>Website Hosting provided by <a href="http://www.simplehelix.com" target="_blank"><img class="simplehelixlogo" src="/img/simplehelix.svg"></a></p>
-      		</div>
-        </div>
-      </div>
-    </div>
+	@html.block('contactus', function(model) {
+		<div class="section" id="section3">
+			<div class="contact-us-top">
+				<h1>Contact us, join the mailing list, or submit an idea!</h1>
+			</div> <!-- .contact-us-top -->
+
+			<div class="container">
+				<div class="row">
+					<div class="col-md-offset-4 col-md-4 col-sm-offset-1 col-sm-10">
+						<form id="input-form">
+							<div class="form-group" id="email-form-group">
+								<label for="exampleInputEmail1">Email address</label>
+								<input type="email" class="form-control" id="inputEmail" placeholder="Email">
+							</div> <!-- form-group -->
+							<label for="message">Message</label>
+							<textarea class="form-control" id="inputMessage" cols="30" rows="6"></textarea>
+							<br>
+							<button type="submit" class="btn btn-warning btn-block" id="contact-us-button">Submit</button>
+						</form>
+
+					</div> <!-- .col-md-offset-4 .col-md-4 .col-sm-offset-1 .col-sm-10 -->
+				</div> <!-- .row -->
+			</div> <!-- .container -->
+
+
+		<footer>
+			<div class="container">
+				<ul class="social text-center">
+					<li><a href="https://www.facebook.com/groups/code4huntsville" target="_blank"><i class="fa fa-lg fa-facebook"></i></a></li>
+					<li><a href="https://twitter.com/intent/follow?screen_name=code4huntsville" target="_blank"><i class="fa fa-lg fa-twitter"></i></a></li>
+					<li><a href="https://github.com/codeforhuntsville" target="_blank"><i class="fa fa-lg fa-github"></i></a></li>
+					<li><a href="https://codeforhuntsville.slack.com" target="_blank"><i class="fa fa-lg fa-slack"></i></a></li>
+				</ul>
+
+				<p class="text-center">&copy;
+					<script type="text/javascript">
+						document.write(new Date().getFullYear());
+					</script> - All Rights Reserved</p>
+				<p class="text-center">Website Hosting provided by
+					<a href="http://www.simplehelix.com" target="_blank"><img class="simplehelixlogo" src="/img/simplehelix.svg"></a>
+				</p>
+			</div> <!-- .container -->
+		</div> <!-- #section3 -->
+		</footer>
   })
 })

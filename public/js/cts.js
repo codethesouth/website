@@ -36,6 +36,7 @@ $(document).ready(function(){
   var height1 = 0;
   var height2 = 0;
 
+/*
   $('#about-row-1').load(function()
     {
       about1Loaded = true;
@@ -50,7 +51,7 @@ $(document).ready(function(){
           }
         }
     });
-
+    
     $('#about-row-2').load(function()
       {
         about2Loaded = true;
@@ -65,4 +66,6 @@ $(document).ready(function(){
             }
           }
       });
+      
+      */
 });

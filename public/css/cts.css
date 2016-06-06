@@ -6,27 +6,27 @@ body {
 
 @font-face {
     font-family: 'Lato-Hairline';
-    src: url('../font/lato/Lato-Hairline.ttf') format('truetype');
+    src: url('../fonts/lato/Lato-Hairline.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'OstrichSans-Black';
-    src: url('../font/ostrich-sans/OstrichSans-Black.otf') format('opentype');
+    src: url('../fonts/ostrich-sans/OstrichSans-Black.otf') format('opentype');
 }
 
 @font-face {
     font-family: 'Lato-Light';
-    src: url('../font/lato/Lato-Light.ttf') format('truetype');
+    src: url('../fonts/lato/Lato-Light.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Raleway';
-    src: url('../font/raleway/Raleway-Bold.ttf') format('truetype');
+    src: url('../fonts/raleway/Raleway-Bold.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Roboto';
-    src: url('../font/roboto/Roboto-Medium.ttf') format('truetype');
+    src: url('../fonts/roboto/Roboto-Medium.ttf') format('truetype');
 }
 
 .navbar {
@@ -150,7 +150,6 @@ a.navbar-brand {
   margin: 0;
 }
 
-
 @media(max-width:768px){
   #about-header {
     top: 12.5%;
@@ -175,13 +174,11 @@ a.navbar-brand {
 
 .about-purpose {
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  position: absolute;
-  bottom: 20%;
+  margin-top: 25px;
 }
 
 @media (max-width:768px){
   .about-purpose {
-    bottom: 10px;
     font-size: 13px;
   }
 
@@ -224,7 +221,7 @@ ul > li.purpose-item-li { list-style-type: none; }
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display:         flex;
+  display: flex;
   flex-wrap: wrap;
 }
 .about-purpose > .row > [class*='col-'] {
@@ -279,10 +276,6 @@ ul > li.purpose-item-li { list-style-type: none; }
 
 
 .contact-us-top {
-  position: absolute;
-  top: 50px;
-  height: auto;
-  width: 100%;
   font-family: 'OstrichSans-Black';
 }
 
@@ -426,18 +419,51 @@ hr.double-style {
 
 }
 
- .fa-facebook {
-   color: #3b5998;
- }
-
-.fa-twitter {
-  color: #55acee;
+footer {
+    margin: 20px 0 0 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: #1F2C37;
+    /* min-height: 70vh; */
 }
 
-.fa-github {
-  color: #333;
+.social {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-.fa-slack {
-  color: #0f7965
+.social li {
+    display: inline-block;
+    margin: 0 5px 20px 0;
+    border-radius: 3px;
+    box-shadow: 0 4px 0 transparent;
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+
+.social li a {
+    display: block;
+    background: rgba(0, 0, 0, 0.2); /* 20% black */
+    color: rgba(255,255,255,0.3);
+    font-size: 21px;
+    line-height: 50px;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    -moz-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+
+.social li a:hover {
+  color: #FFFFFF;
+}
+
+footer > .container > p {
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 300;
 }
