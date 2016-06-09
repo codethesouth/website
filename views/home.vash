@@ -1,1 +1,10 @@
-﻿<h1>Home</h1>
+<div id="home">
+  <div class="col-md-offset-7 col-md-3">
+    <div class="row">
+      <img id="logo" src="/img/codethesouth-logo-rgb-999.svg">
+    </div>
+    <div class="row">
+      <p id="slogan">Building software solutions for the community.</p>
+    </div>
+  </div>
+</div>
