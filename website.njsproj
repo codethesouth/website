@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>website</Name>
+    <RootNamespace>website</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>875dbd5b-d24b-44c2-8d71-2eeb96110d0e</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>server.js</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <ProjectView>ShowAllFiles</ProjectView>
+    <NodejsPort>3001</NodejsPort>
+    <StartWebBrowser>True</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Gruntfile.js" />
+    <Compile Include="public\css\cts.css" />
+    <Compile Include="public\js\cts.js" />
+    <Compile Include="public\lib\dist\main.js" />
+    <Compile Include="public\lib\dist\main.min.js" />
+    <Compile Include="public\lib\js\bootstrap\bootstrap.js" />
+    <Compile Include="public\lib\js\jquery\jquery.js" />
+    <Compile Include="routes\index.js" />
+    <Compile Include="server.js" />
+    <Content Include="bower.json" />
+    <Content Include="favicon.ico" />
+    <Content Include="package.json" />
+    <Content Include="public\img\codethesouth-favicon.ico" />
+    <Content Include="public\img\codethesouth-icon-rgb.svg" />
+    <Content Include="public\img\codethesouth-logo-rgb-555.svg" />
+    <Content Include="public\img\codethesouth-logo-rgb-999.svg" />
+    <Content Include="public\img\codethesouth-logo-rgb.svg" />
+    <Content Include="public\img\rocket.jpg" />
+    <Content Include="public\img\simplehelix.svg" />
+    <Content Include="public\lib\css\bootstrap\bootstrap-theme.css" />
+    <Content Include="public\lib\css\bootstrap\bootstrap.css" />
+    <Content Include="public\lib\css\fontawesome\font-awesome.css" />
+    <Content Include="public\lib\dist\main.css" />
+    <Content Include="public\lib\dist\main.min.css" />
+    <Content Include="public\lib\fonts\bootstrap\glyphicons-halflings-regular.eot" />
+    <Content Include="public\lib\fonts\bootstrap\glyphicons-halflings-regular.svg" />
+    <Content Include="public\lib\fonts\bootstrap\glyphicons-halflings-regular.ttf" />
+    <Content Include="public\lib\fonts\bootstrap\glyphicons-halflings-regular.woff" />
+    <Content Include="public\lib\fonts\bootstrap\glyphicons-halflings-regular.woff2" />
+    <Content Include="public\lib\fonts\fontawesome-webfont.eot" />
+    <Content Include="public\lib\fonts\fontawesome-webfont.svg" />
+    <Content Include="public\lib\fonts\fontawesome-webfont.ttf" />
+    <Content Include="public\lib\fonts\fontawesome-webfont.woff" />
+    <Content Include="public\lib\fonts\fontawesome-webfont.woff2" />
+    <Content Include="public\lib\fonts\FontAwesome.otf" />
+    <Content Include="public\lib\fonts\fontawesome\fontawesome-webfont.eot" />
+    <Content Include="public\lib\fonts\fontawesome\fontawesome-webfont.svg" />
+    <Content Include="public\lib\fonts\fontawesome\fontawesome-webfont.ttf" />
+    <Content Include="public\lib\fonts\fontawesome\fontawesome-webfont.woff" />
+    <Content Include="public\lib\fonts\fontawesome\fontawesome-webfont.woff2" />
+    <Content Include="public\lib\fonts\fontawesome\FontAwesome.otf" />
+    <Content Include="public\lib\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="public\lib\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="public\lib\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="public\lib\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="public\lib\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="README.md" />
+    <Content Include="robots.txt" />
+    <Content Include="views\about.vash" />
+    <Content Include="views\contact.vash" />
+    <Content Include="views\gettingstarted.vash" />
+    <Content Include="views\home.vash" />
+    <Content Include="views\index.vash" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="public\img\" />
+    <Folder Include="routes\" />
+    <Folder Include="public\" />
+    <Folder Include="public\lib\" />
+    <Folder Include="public\lib\css\" />
+    <Folder Include="public\lib\css\bootstrap\" />
+    <Folder Include="public\lib\css\fontawesome\" />
+    <Folder Include="public\lib\dist\" />
+    <Folder Include="public\lib\fonts\" />
+    <Folder Include="public\lib\fonts\bootstrap\" />
+    <Folder Include="public\lib\fonts\fontawesome\" />
+    <Folder Include="public\lib\js\" />
+    <Folder Include="public\lib\js\bootstrap\" />
+    <Folder Include="public\lib\js\jquery\" />
+    <Folder Include="public\css\" />
+    <Folder Include="public\js\" />
+    <Folder Include="views\" />
+  </ItemGroup>
+  <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

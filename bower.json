@@ -1,0 +1,23 @@
+{
+  "name": "Code the South",
+  "homepage": "https://github.com/codethesouth/website",
+  "dependencies": {
+      "bootstrap": "^3.3.6",
+      "fontawesome": "^4.6.3",
+      "jquery": "^2.2.4"
+  },
+  "exportsOverride": {
+    "bootstrap": {
+      "css": [ "dist/css/bootstrap.css", "dist/css/bootstrap-theme.css" ],
+      "fonts": [ "dist/fonts/*.eot", "dist/fonts/*.svg", "dist/fonts/*.ttf", "dist/fonts/*.woff", "dist/fonts/*.woff2" ],
+      "js": "dist/js/bootstrap.js"
+    },
+    "fontawesome": {
+      "css": "css/font-awesome.css",
+      "fonts": "fonts/*"
+    },
+    "jquery": {
+      "js": "dist/jquery.js"
+    }
+  }
+}

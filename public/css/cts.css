@@ -1,0 +1,24 @@
+﻿/*!
+ * Code the South v1.0.0 (http://codethesouth.com)
+ * Copyright 2016 Code the South
+ */
+
+.navbar-brand {
+    padding: 0;
+}
+
+#home {
+    min-height: 100%;
+}
+
+#about {
+    min-height: 100%;
+}
+
+#gettingStarted {
+    min-height: 100%;
+}
+
+#contact {
+    min-height: 100%;
+}
