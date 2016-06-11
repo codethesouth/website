@@ -90,5 +90,5 @@ module.exports = function (grunt) {
     grunt.registerTask("default", ["bower", "concat", "cssmin", "uglify", "copy", "watch"]);
     grunt.registerTask("dev", ["bower", "concat", "cssmin", "uglify", "copy"]);
     grunt.registerTask("combine", ["concat", "cssmin", "uglify", "copy"]);
-    grunt.registerInitTask("install", ["bower"]);
+    grunt.registerTask("install", ["bower"]);
 };
