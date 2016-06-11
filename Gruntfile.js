@@ -1,4 +1,4 @@
-﻿/// <binding BeforeBuild='default' />
+﻿/// <binding BeforeBuild='dev' />
 /*global module */
 module.exports = function (grunt) {
     "use strict";
@@ -23,24 +23,28 @@ module.exports = function (grunt) {
                 src: [
                     "public/lib/css/bootstrap/bootstrap.css",
                     "public/lib/css/fontawesome/font-awesome.css",
-                    "public/css/cts.css"
+                    "public/css/about.css",
+                    "public/css/contact.css",
+                    "public/css/gettingstarted.css",
+                    "public/css/home.css",
+                    "public/css/index.css"
                 ],
-                dest: "public/lib/dist/main.css"
+                dest: "public/lib/dist/cts.css"
             },
             js: {
                 src: [
                     "public/lib/js/jquery/jquery.js",
                     "public/lib/js/bootstrap/bootstrap.js",
-                    "public/js/cts.js"
+                    "public/js/script.js"
                 ],
-                dest: "public/lib/dist/main.js"
+                dest: "public/lib/dist/cts.js"
             }
         },
         
         cssmin: {
             target: {
                 files: {
-                    "public/lib/dist/main.min.css": "public/lib/dist/main.css"
+                    "public/lib/dist/cts.min.css": "public/lib/dist/cts.css"
                 }
             }
         },
@@ -48,7 +52,7 @@ module.exports = function (grunt) {
         uglify : {
             js: {
                 files: {
-                    "public/lib/dist/main.min.js": "public/lib/dist/main.js"
+                    "public/lib/dist/cts.min.js": "public/lib/dist/cts.js"
                 }
             }
         },
@@ -84,6 +88,7 @@ module.exports = function (grunt) {
     // define the default task that can be run just by typing "grunt" on the command line
     // the array should contains the names of the tasks to run
     grunt.registerTask("default", ["bower", "concat", "cssmin", "uglify", "copy", "watch"]);
+    grunt.registerTask("dev", ["bower", "concat", "cssmin", "uglify", "copy"]);
     grunt.registerTask("combine", ["concat", "cssmin", "uglify", "copy"]);
     grunt.registerInitTask("install", ["bower"]);
 };

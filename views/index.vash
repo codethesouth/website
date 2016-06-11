@@ -10,7 +10,7 @@
     <meta name="Resource-type" content="Document" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="stylesheet" type="text/css" href="/lib/dist/main.css" />
+    <link rel="stylesheet" type="text/css" href="/lib/dist/cts.css" />
     <link rel="shortcut icon" href="/img/codethesouth-favicon.ico" />
 </head>
 <body>
@@ -49,5 +49,24 @@
     @html.include("about")
     @html.include("gettingstarted")
     @html.include("contact")
+
+	<footer>
+		<div class="container">
+		<ul class="social text-center">
+			<li><a href="https://www.facebook.com/groups/code4huntsville" target="_blank"><i class="fa fa-lg fa-facebook"></i></a></li>
+			<li><a href="https://twitter.com/intent/follow?screen_name=code4huntsville" target="_blank"><i class="fa fa-lg fa-twitter"></i></a></li>
+			<li><a href="https://github.com/codeforhuntsville" target="_blank"><i class="fa fa-lg fa-github"></i></a></li>
+			<li><a href="https://codeforhuntsville.slack.com" target="_blank"><i class="fa fa-lg fa-slack"></i></a></li>
+		</ul>
+
+		<p class="text-center">&copy;
+			<script type="text/javascript">
+				document.write(new Date().getFullYear());
+			</script> - All Rights Reserved</p>
+			<p class="text-center">Website Hosting provided by
+				<a href="http://www.simplehelix.com" target="_blank"><img src="/img/simplehelix.svg" height="36" width="36" /></a>
+			</p>
+		</div> <!-- .container -->
+	</footer>
   </body>
 </html>

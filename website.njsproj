@@ -10,7 +10,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>875dbd5b-d24b-44c2-8d71-2eeb96110d0e</ProjectGuid>
+    <ProjectGuid>{27ee5507-f7e9-4bef-88dd-9761f42feb53}</ProjectGuid>
     <ProjectHome>.</ProjectHome>
     <StartupFile>server.js</StartupFile>
     <SearchPath>
@@ -31,17 +31,22 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Gruntfile.js" />
-    <Compile Include="public\css\cts.css" />
-    <Compile Include="public\js\cts.js" />
+    <Compile Include="public\css\index.css" />
+    <Compile Include="public\js\script.js" />
     <Compile Include="public\lib\dist\main.js" />
     <Compile Include="public\lib\dist\main.min.js" />
     <Compile Include="public\lib\js\bootstrap\bootstrap.js" />
     <Compile Include="public\lib\js\jquery\jquery.js" />
     <Compile Include="routes\index.js" />
     <Compile Include="server.js" />
+    <Content Include=".gitignore" />
     <Content Include="bower.json" />
     <Content Include="favicon.ico" />
     <Content Include="package.json" />
+    <Content Include="public\css\about.css" />
+    <Content Include="public\css\contact.css" />
+    <Content Include="public\css\gettingstarted.css" />
+    <Content Include="public\css\home.css" />
     <Content Include="public\img\codethesouth-favicon.ico" />
     <Content Include="public\img\codethesouth-icon-rgb.svg" />
     <Content Include="public\img\codethesouth-logo-rgb-555.svg" />
