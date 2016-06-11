@@ -5,3 +5,10 @@
 #gettingStarted {
     min-height: 100vh;
 }
+
+#groupRoles > div.row > div.col-sm-2.col-sm-offset-3 > i, 
+#groupRoles > div.row > div.col-sm-2.col-sm-offset-2 > i {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+}
