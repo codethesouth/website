@@ -2,3 +2,7 @@
  *     Home Section     *
  ***********************/
 
+#home {
+    min-height: 100vh;
+}
+
