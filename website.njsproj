@@ -35,8 +35,6 @@
     <Compile Include="public\js\script.js" />
     <Compile Include="public\lib\dist\cts.js" />
     <Compile Include="public\lib\dist\cts.min.js" />
-    <Compile Include="public\lib\dist\main.js" />
-    <Compile Include="public\lib\dist\main.min.js" />
     <Compile Include="public\lib\js\bootstrap\bootstrap.js" />
     <Compile Include="public\lib\js\jquery\jquery.js" />
     <Compile Include="routes\index.js" />
@@ -61,8 +59,6 @@
     <Content Include="public\lib\css\fontawesome\font-awesome.css" />
     <Content Include="public\lib\dist\cts.css" />
     <Content Include="public\lib\dist\cts.min.css" />
-    <Content Include="public\lib\dist\main.css" />
-    <Content Include="public\lib\dist\main.min.css" />
     <Content Include="public\lib\fonts\bootstrap\glyphicons-halflings-regular.eot" />
     <Content Include="public\lib\fonts\bootstrap\glyphicons-halflings-regular.svg" />
     <Content Include="public\lib\fonts\bootstrap\glyphicons-halflings-regular.ttf" />

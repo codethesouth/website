@@ -1,4 +1,4 @@
-﻿/// <binding BeforeBuild='dev' />
+﻿/// <binding ProjectOpened='dev' />
 /*global module */
 module.exports = function (grunt) {
     "use strict";
