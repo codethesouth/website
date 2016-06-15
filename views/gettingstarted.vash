@@ -1,4 +1,4 @@
-﻿<div class="container-fluid">
+﻿<section id="gettingStarted" class="container-fluid">
   <div class="row">
     <div class="col-sm-12">
       <h1 class="text-center">DO YOU WANT TO GET INVOLVED?</h1>
@@ -10,6 +10,7 @@
       <hr />
     </div>
   </div>
+  <br /> <br />
   <div id="groupRoles">
     <div class="row">
       <div class="col-sm-2 col-sm-offset-3">
@@ -39,4 +40,4 @@
       </div> <!-- .col-sm-2 col-sm-offset-2 -->
     </div> <!-- .row -->
   </div>
-</div>
+</section>

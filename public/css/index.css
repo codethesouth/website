@@ -1,32 +1,10 @@
 body {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-/* index.vash css */
 .navbar-brand {
     padding: 0;
-}
-
-/* index.vash css */
-#home {
-    background-image: url('/img/rocket.jpg');
-    background-size: cover;
-    background-position:center;
-    padding-top: 70px;
-    height: 100vh;
-    text-align: center;
-}
-
-#home:before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(1,32,36, 0.75);
 }
 
 #logo {
@@ -41,7 +19,7 @@ body {
 }
 
 #slogan {
-    color: #eee;
+    color: #EEEEEE;
     margin-bottom: 200px;
     text-align: center;
     width: 100%;
@@ -62,7 +40,6 @@ footer {
     padding-top: 50px;
     padding-bottom: 50px;
     background: #1F2C37;
-    /* min-height: 70vh; */
 }
 
 .social {
@@ -77,6 +54,8 @@ footer {
     border-radius: 3px;
     box-shadow: 0 4px 0 transparent;
     -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
     transition: all .3s ease-out;
 }
 

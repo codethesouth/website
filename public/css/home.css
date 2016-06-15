@@ -3,6 +3,22 @@
  ***********************/
 
 #home {
+    background-image: url('/img/rocket.jpg');
+    background-size: cover;
+    background-position:center;
+    padding-top: 70px;
     min-height: 100vh;
+    text-align: center;
+}
+
+#home:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(1,32,36, 0.75);
 }
 
