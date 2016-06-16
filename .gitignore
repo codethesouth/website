@@ -254,9 +254,8 @@ paket-files/
 
 # Project related files/folders to ignore
 website.sln
-public/lib/css/bootstrap/bootstrap-theme.css
-public/lib/css/bootstrap/bootstrap.css
+public/lib/css/bootstrap/*.css
+public/lib/fonts/bootstrap/*
+public/lib/js/bootstrap/*.js
 public/lib/dist/cts.css
 public/lib/dist/cts.js
-public/lib/fonts/bootstrap/glyphicons-halflings-regular.svg
-public/lib/js/bootstrap/bootstrap.js
