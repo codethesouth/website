@@ -11,7 +11,7 @@
     </div>
   </div>
   <br /> <br />
-  <div id="groupRoles">
+  <div class="roles">
     <div class="row">
       <div class="col-sm-2 col-sm-offset-3">
         <i class="fa fa-4x fa-group text-primary"></i>

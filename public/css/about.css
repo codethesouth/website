@@ -4,4 +4,10 @@
 
 #about {
     min-height: 100vh;
+    background: #f1f2f3;
+}
+
+#aboutHr {
+  border-top: 3px double #333;
+  max-width: 300px;
 }
