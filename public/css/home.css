@@ -22,3 +22,10 @@
     background: rgba(1,32,36, 0.75);
 }
 
+@media (min-width: 1200px) {
+    #home > div > .row {
+        margin-top: 45%;
+        margin-left: -45%;
+    }
+}
+

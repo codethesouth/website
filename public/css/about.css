@@ -3,11 +3,26 @@
  ************************/
 
 #about {
-    min-height: 100vh;
+    padding-top: 70px;
+    min-height: 70vh;
     background: #f1f2f3;
 }
 
-#aboutHr {
+.double-hr {
   border-top: 3px double #333;
   max-width: 300px;
+}
+
+/* Font Color of About Section */
+#about > div.roles > div.row > div > h4, #about > div.roles > div.row > div > p {
+    color: #303030;
+}
+
+.roles > .row > div > i {
+    text-align: center;
+    display: inherit;
+}
+
+.text-orange {
+    color: #EDAA00;
 }

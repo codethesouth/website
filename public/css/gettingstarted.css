@@ -3,5 +3,33 @@
  **********************************/
 
 #gettingStarted {
+    background-color: #0A1823;
+    padding-top: 70px;
     min-height: 70vh;
+}
+
+.roles > .row > div > h4 {
+    color: #AAAAAA;
+}
+
+.roles > .row > div > p {
+    color: #C1C1C1;
+}
+
+.roles > .row > div > p > a {
+    color: #C1C1C1;
+    text-decoration: underline;
+}
+
+#gettingStarted > .row > div > p {
+    color: #777777;
+}
+
+#gettingStarted > .row > div > h1 {
+    color: #CCCCCC;
+}
+
+.double-hr-gray {
+    border-top: 3px double #CCCCCC;
+    max-width: 300px;
 }
