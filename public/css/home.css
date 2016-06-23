@@ -23,9 +23,8 @@
 }
 
 @media (min-width: 1200px) {
-    #home > div > .row {
-        margin-top: 45%;
-        margin-left: -45%;
+    #home > .row {
+        margin: 35px 0 0 -45px;
+        padding: 0;
     }
 }
-

@@ -6,3 +6,8 @@
     padding-top: 70px;
     min-height: 70vh;
 }
+
+#submitBtn {
+    width: 50%;
+    margin: 0 auto;
+}

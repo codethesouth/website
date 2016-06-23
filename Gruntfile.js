@@ -68,7 +68,7 @@ module.exports = function (grunt) {
         },
         
         watch: {
-            files: ["public/css/cts.css", "public/js/cts.js"],
+            files: ["public/css/*.css", "public/js/*.js"],
             tasks: ["concat", "cssmin", "uglify"]
         }
     });

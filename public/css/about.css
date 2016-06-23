@@ -4,18 +4,24 @@
 
 #about {
     padding-top: 70px;
+    padding-bottom: 40px;
     min-height: 70vh;
-    background: #f1f2f3;
+    background: #F1F2F3;
 }
 
 .double-hr {
-  border-top: 3px double #333;
+  border-top: 3px double #1F1F1F;
   max-width: 300px;
+}
+
+#about > .row > div > h3 {
+    padding-top: 20px;
+    margin-bottom: 0;
 }
 
 /* Font Color of About Section */
 #about > div.roles > div.row > div > h4, #about > div.roles > div.row > div > p {
-    color: #303030;
+    color: #1F1F1F;
 }
 
 .roles > .row > div > i {
