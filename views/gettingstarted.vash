@@ -1,0 +1,43 @@
+﻿<section id="gettingStarted" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12">
+      <h1 class="text-center">DO YOU WANT TO GET INVOLVED?</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+      <p class="text-center">Join a group that fits your expertise.</p>
+      <hr class="double-hr-gray" />
+    </div>
+  </div>
+  <br /> <br />
+  <div class="roles">
+    <div class="row">
+      <div class="col-sm-2 col-sm-offset-3">
+        <i class="fa fa-4x fa-group text-primary"></i>
+        <h4 class="text-center">Community Member</h4>
+        <p class="text-center">Writer, artist, organizer, storyteller or social media coordinator, we need you! Help organize meetings, steer committees or coordinate projects. Simply fill out the
+          <a href="https://docs.google.com/forms/d/1wkOoGgLyuDzO6MKjsB8yZhH1U1lfV5KGqJ9HWtLS6pA/edit?usp=drive_web">committee candidate form.</a>
+        </p>
+      </div> <!-- .col-sm-2 col-sm-offset-3 -->
+      <div class="col-sm-2 col-sm-offset-2">
+        <i class="fa fa-4x fa-keyboard-o text-primary"></i>
+        <h4 class="text-center">Software Developer</h4>
+        <p class="text-center">Can you write code? Help us build applications to make the future better. Check out our <a href="https://github.com/codeforhuntsville">GitHub</a> page to help.</p>
+      </div> <!-- .col-sm-2 col-sm-offset-2 -->
+    </div> <!-- .row -->
+    <br />
+    <div class="row">
+      <div class="col-sm-2 col-sm-offset-3">
+        <i class="fa fa-4x fa-recycle text-primary"></i>
+        <h4 class="text-center">Nonprofit Organization</h4>
+        <p class="text-center">We support nonprofit agencies! If you are involved with an NGO or nonprofit organization please contact us.</p>
+      </div> <!-- .col-sm-2 col-sm-offset-3 -->
+      <div class="col-sm-2 col-sm-offset-2">
+        <i class="fa fa-4x fa-newspaper-o text-primary"></i>
+        <h4 class="text-center">Local Government Worker</h4>
+        <p class="text-center">We need contacts to help us form new projects. Become a liaison for CodeTheSouth.</p>
+      </div> <!-- .col-sm-2 col-sm-offset-2 -->
+    </div> <!-- .row -->
+  </div>
+</section>

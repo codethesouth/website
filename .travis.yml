@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+  - "4.1"
+
+before_script:
+  - sudo pip install pysftp
+
+deploy:
+  provider: script
+  script: deploy.sh
+  on:
+    branch: "release1.0"
