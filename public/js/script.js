@@ -14,4 +14,12 @@ form.addEventListener("submit", function (event) {
     var email = document.querySelector("#emailLabel").value;
     var message = document.querySelector("#msgTextarea").value;
     var reason = document.querySelector("#formSubmissionOption > option").value;
+    
+
+    if (reason === "contact") {
+
+    }
+    else if (reason === "idea") {
+
+    }
 });
