@@ -17,8 +17,8 @@ print "Starting SFTP Connection"
 sftp = pysftp.Connection( server, username=username, password=password )
 
 # Upload files to the server
-files = [ "app.js", "package.json", "tsd.json" ]
-folders = [ "bin", "obj", "public", "routes", "typings", "views"]
+files = [ "bower.json", "favicon.ico", "Gruntfile.js", "package.json", "robots.txt", "server.js" ]
+folders = [ "bin", "obj", "public", "routes", "views"]
 
 print "Starting copy of the current directory"
 
