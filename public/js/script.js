@@ -14,12 +14,29 @@ form.addEventListener("submit", function (event) {
     var email = document.querySelector("#emailLabel").value;
     var message = document.querySelector("#msgTextarea").value;
     var reason = document.querySelector("#formSubmissionOption > option").value;
+    var url = "/spreadsheets/";
     
-
+    url += "1JIuyTrAuHZZ4hnhN62tkQZs5TjkX0aV5f7oEPg9mn40";
+    /*
     if (reason === "contact") {
-
+        url += "1JIuyTrAuHZZ4hnhN62tkQZs5TjkX0aV5f7oEPg9mn40";
     }
     else if (reason === "idea") {
-
+        url += "1rN5G10gRdQwsu4c4m2AtU-vvrIzSmup1RJnaCpzsYAs";
     }
+     
+    */
+    
+    url += "/sync";
+
+    $.ajax(url, {
+        method: "POST",
+        headers: {},
+        success: function (response) {
+            console.info("Request succeeded!");
+        },
+        error: function (response) {
+            console.error("Request failed!");
+        }
+    });
 });
