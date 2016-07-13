@@ -14,8 +14,15 @@ form.addEventListener("submit", function (event) {
     var email = document.querySelector("#emailLabel").value;
     var message = document.querySelector("#msgTextarea").value;
     var reason = document.querySelector("#formSubmissionOption > option").value;
+    var form_data = {
+      "name": name,
+      "email": email,
+      "message": message,
+      "reason": reason
+    };
+
     var url = "/spreadsheets/";
-    
+
     url += "1JIuyTrAuHZZ4hnhN62tkQZs5TjkX0aV5f7oEPg9mn40";
     /*
     if (reason === "contact") {
@@ -24,19 +31,21 @@ form.addEventListener("submit", function (event) {
     else if (reason === "idea") {
         url += "1rN5G10gRdQwsu4c4m2AtU-vvrIzSmup1RJnaCpzsYAs";
     }
-     
-    */
-    
-    url += "/sync";
 
+    */
+
+    url += "/sync";
     $.ajax(url, {
         method: "POST",
         headers: {},
+        data: JSON.stringify(form_data),
+        contentType: "application/json",
+        dataType: 'json',
         success: function (response) {
-            console.info("Request succeeded!");
+            console.info("Request succeeded!" + response);
         },
         error: function (response) {
-            console.error("Request failed!");
+            console.error("Request failed!" + response);
         }
     });
 });
