@@ -13,9 +13,18 @@ form.addEventListener("submit", function (event) {
     var name = document.querySelector("#nameLabel").value;
     var email = document.querySelector("#emailLabel").value;
     var message = document.querySelector("#msgTextarea").value;
-    var reason = document.querySelector("#formSubmissionOption > option").value;
+    var selection = document.querySelector("#formSubmissionOption");
+    var reason = selection.options[selection.selectedIndex].value;
+
+    var form_data = {
+      "name": name,
+      "email": email,
+      "message": message,
+      "reason": reason
+    };
+
     var url = "/spreadsheets/";
-    
+
     if (reason === "contact") {
         url += "1RIAFV6J5vlk09EF99FdLPOZz2-r7XckysxOQzNiROH4";
     }
@@ -28,11 +37,14 @@ form.addEventListener("submit", function (event) {
     $.ajax(url, {
         method: "POST",
         headers: {},
+        data: JSON.stringify(form_data),
+        contentType: "application/json",
+        dataType: "json",
         success: function (response) {
-            console.info("Request succeeded!");
+            console.info("Request succeeded!" + response);
         },
         error: function (response) {
-            console.error("Request failed!");
+            console.error("Request failed!" + response);
         }
     });
 });
