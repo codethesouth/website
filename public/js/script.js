@@ -16,16 +16,12 @@ form.addEventListener("submit", function (event) {
     var reason = document.querySelector("#formSubmissionOption > option").value;
     var url = "/spreadsheets/";
     
-    url += "1JIuyTrAuHZZ4hnhN62tkQZs5TjkX0aV5f7oEPg9mn40";
-    /*
     if (reason === "contact") {
-        url += "1JIuyTrAuHZZ4hnhN62tkQZs5TjkX0aV5f7oEPg9mn40";
+        url += "1RIAFV6J5vlk09EF99FdLPOZz2-r7XckysxOQzNiROH4";
     }
     else if (reason === "idea") {
-        url += "1rN5G10gRdQwsu4c4m2AtU-vvrIzSmup1RJnaCpzsYAs";
+        url += "1A4TN19l02WkhE16nKwdy0aKkJUhn-aKpALS9ymHUXp0";
     }
-     
-    */
     
     url += "/sync";
 

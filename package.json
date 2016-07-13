@@ -19,6 +19,7 @@
     }
   ],
   "dependencies": {
+    "async": "^2.0.0",
     "express": "^4.13.4",
     "google-spreadsheet": "^2.0.3",
     "vash": "^0.12.1"
