@@ -5,7 +5,7 @@ module.exports = function (grunt) {
     grunt.initConfig({
         // read in the project settings from the package.json file into the pkg property
         pkg: grunt.file.readJSON("package.json"),
-        
+
         // Install only the bower packages that we need
         bower: {
             install: {
@@ -17,12 +17,13 @@ module.exports = function (grunt) {
                 }
             }
         },
-        
+
         concat: {
             css: {
                 src: [
                     "public/lib/css/bootstrap/bootstrap.css",
                     "public/lib/css/fontawesome/font-awesome.css",
+                    "public/lib/css/toastr/toastr.css",
                     "public/css/about.css",
                     "public/css/contact.css",
                     "public/css/gettingstarted.css",
@@ -35,12 +36,13 @@ module.exports = function (grunt) {
                 src: [
                     "public/lib/js/jquery/jquery.js",
                     "public/lib/js/bootstrap/bootstrap.js",
+                    "public/lib/js/toastr/toastr.js",
                     "public/js/script.js"
                 ],
                 dest: "public/lib/dist/cts.js"
             }
         },
-        
+
         cssmin: {
             target: {
                 files: {
@@ -48,7 +50,7 @@ module.exports = function (grunt) {
                 }
             }
         },
-        
+
         uglify : {
             js: {
                 files: {
@@ -56,7 +58,7 @@ module.exports = function (grunt) {
                 }
             }
         },
-        
+
         copy: {
             files: {
                 expand: true,
@@ -66,13 +68,13 @@ module.exports = function (grunt) {
                 filter: "isFile"
             }
         },
-        
+
         watch: {
             files: ["public/css/*.css", "public/js/*.js"],
             tasks: ["concat", "cssmin", "uglify"]
         }
     });
-    
+
     // Add all plugins that your project needs here
     grunt.loadNpmTasks("grunt-bower-task");
     grunt.loadNpmTasks("grunt-contrib-concat");
@@ -80,11 +82,11 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks("grunt-contrib-cssmin");
     grunt.loadNpmTasks("grunt-contrib-uglify");
     grunt.loadNpmTasks("grunt-contrib-watch");
-    
+
     // this would be run by typing "grunt test" on the command line
     // the array should contains the names of the tasks to run
     grunt.registerTask("test", []);
-    
+
     // define the default task that can be run just by typing "grunt" on the command line
     // the array should contains the names of the tasks to run
     grunt.registerTask("default", ["bower", "concat", "cssmin", "uglify", "copy", "watch"]);
