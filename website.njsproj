@@ -35,7 +35,6 @@
     <Compile Include="public\js\script.js" />
     <Compile Include="public\lib\dist\cts.js" />
     <Compile Include="public\lib\dist\cts.min.js" />
-    <Compile Include="public\lib\js\bootstrap\bootstrap.js" />
     <Compile Include="public\lib\js\jquery\jquery.js" />
     <Compile Include="routes\index.js" />
     <Compile Include="server.js" />
@@ -124,11 +123,8 @@
     <Content Include="public\img\rocket.jpg" />
     <Content Include="public\img\simplehelix.svg" />
     <Content Include="public\lib\css\bootstrap\bootstrap-theme.css" />
-    <Content Include="public\lib\css\bootstrap\bootstrap.css" />
-    <Content Include="public\lib\css\fontawesome\font-awesome.css" />
     <Content Include="public\lib\dist\cts.css" />
     <Content Include="public\lib\dist\cts.min.css" />
-    <Content Include="public\lib\fonts\bootstrap\glyphicons-halflings-regular.eot" />
     <Content Include="public\lib\fonts\bootstrap\glyphicons-halflings-regular.svg" />
     <Content Include="public\lib\fonts\bootstrap\glyphicons-halflings-regular.ttf" />
     <Content Include="public\lib\fonts\bootstrap\glyphicons-halflings-regular.woff" />
@@ -144,7 +140,6 @@
     <Content Include="public\lib\fonts\fontawesome\fontawesome-webfont.ttf" />
     <Content Include="public\lib\fonts\fontawesome\fontawesome-webfont.woff" />
     <Content Include="public\lib\fonts\fontawesome\fontawesome-webfont.woff2" />
-    <Content Include="public\lib\fonts\fontawesome\FontAwesome.otf" />
     <Content Include="public\lib\fonts\glyphicons-halflings-regular.eot" />
     <Content Include="public\lib\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="public\lib\fonts\glyphicons-halflings-regular.ttf" />
@@ -168,15 +163,8 @@
     <Folder Include="routes\" />
     <Folder Include="public\" />
     <Folder Include="public\lib\" />
-    <Folder Include="public\lib\css\" />
-    <Folder Include="public\lib\css\bootstrap\" />
-    <Folder Include="public\lib\css\fontawesome\" />
     <Folder Include="public\lib\dist\" />
     <Folder Include="public\lib\fonts\" />
-    <Folder Include="public\lib\fonts\bootstrap\" />
-    <Folder Include="public\lib\fonts\fontawesome\" />
-    <Folder Include="public\lib\js\" />
-    <Folder Include="public\lib\js\bootstrap\" />
     <Folder Include="public\lib\js\jquery\" />
     <Folder Include="public\css\" />
     <Folder Include="public\js\" />
