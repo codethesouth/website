@@ -1,4 +1,4 @@
-/// <binding ProjectOpened='dev' />
+/// <binding ProjectOpened='combine' />
 /*global module */
 module.exports = function (grunt) {
     "use strict";
@@ -21,9 +21,9 @@ module.exports = function (grunt) {
         concat: {
             css: {
                 src: [
-                    "public/lib/css/bootstrap/bootstrap.css",
-                    "public/lib/css/fontawesome/font-awesome.css",
-                    "public/lib/css/toastr/toastr.css",
+                    "public/lib/css/bootstrap.css",
+                    "public/lib/css/font-awesome.css",
+                    "public/lib/css/toastr.css",
                     "public/css/about.css",
                     "public/css/contact.css",
                     "public/css/gettingstarted.css",
@@ -34,9 +34,9 @@ module.exports = function (grunt) {
             },
             js: {
                 src: [
-                    "public/lib/js/jquery/jquery.js",
-                    "public/lib/js/bootstrap/bootstrap.js",
-                    "public/lib/js/toastr/toastr.js",
+                    "public/lib/js/jquery.js",
+                    "public/lib/js/bootstrap.js",
+                    "public/lib/js/toastr.js",
                     "public/js/script.js"
                 ],
                 dest: "public/lib/dist/cts.js"
