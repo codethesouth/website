@@ -10,12 +10,6 @@ router.get("/", function (request, response) {
 
 router.post("/spreadsheets/:id/sync", function (request, response, next) {
     var id = request.params.id;
-
-    /*
-        console.info("Received call with id: " + id);
-        console.info("Form data: " + request.body);
-    */
-
     var sheet = new GoogleSpreadsheet(id);
     var row = {
         "timestamp": new Date().getTime(),
@@ -23,6 +17,19 @@ router.post("/spreadsheets/:id/sync", function (request, response, next) {
         "email": request.body.email,
         "message": request.body.message
     }
+
+    if (row.name == null || row.name == '')
+        {
+        response.status(400).jsonp({reason: "You must enter a name"});
+        return next();
+        }
+
+    if (row.email == null || row.email == '' || !validateEmail(row.email))
+        {
+        response.status(400).jsonp({reason: "You must enter a valid Email."});
+        return next();
+        }
+
 
     async.series([
         function authenticate(step) {
@@ -39,33 +46,22 @@ router.post("/spreadsheets/:id/sync", function (request, response, next) {
             // Start setting the data to Google Drive
             sheet.addRow(1, row, function (error) {
                 if (error) {
-                    console.log("Sorry, but the data has failed to upload to Google Drive.\n");
-                    console.info(error);
+                  console.log("error");
+                  response.status(500).jsonp({reason: "The form submission failed. Please try again."});
+                  return next();
                 }
                 else {
-                    console.log("Congratulations, the data was successfully uploaded to Google Drive.\n");
+                  response.status(200).jsonp({reason: "Success!"});
+                  return next();
                 }
             });
-        }
-
-      /*
-          function setAuth(step) {
-            var creds = require('./drive_credentials.json');
-            sheet.useServiceAccountAuth(creds, step);
-          },
-          function addRow(step) {
-            // google provides some query options
-            sheet.addRow(1, row, function (error) {
-                if (error) {
-                    console.log("Error adding row! You screwed up!");
-                }
-                else {
-                    console.log("Adding row worked!");
-                }
-            });
-          }
-      */
+        },
     ]);
 });
+
+function validateEmail(email) {
+    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email);
+}
 
 module.exports = router;
