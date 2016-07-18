@@ -31,7 +31,7 @@ form.addEventListener("submit", function (event) {
     else if (reason === "idea") {
         url += "1A4TN19l02WkhE16nKwdy0aKkJUhn-aKpALS9ymHUXp0";
     }
-    
+
     url += "/sync";
 
     $.ajax(url, {
@@ -41,10 +41,13 @@ form.addEventListener("submit", function (event) {
         contentType: "application/json",
         dataType: "json",
         success: function (response) {
-            console.info("Request succeeded!" + response);
+          toastr.success("Thank you for your submission. We'll contact you as soon as possible.", 'Code The South');
+          $("#nameLabel").val('');
+          $("#emailLabel").val('');
+          $("#msgTextarea").val('');
         },
-        error: function (response) {
-            console.error("Request failed!" + response);
+        error: function(response){
+          toastr.error('Uh oh! You did not successfully contact us. ' + response.responseText, 'Code The South');
         }
     });
 });
