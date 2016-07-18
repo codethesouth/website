@@ -51,3 +51,21 @@ form.addEventListener("submit", function (event) {
         }
     });
 });
+/* Improve scrolling functionality */
+var scroll = function(e) {
+
+   // prevent default anchor click behavior
+   e.preventDefault();
+
+   // store hash
+   var hash = this.hash;
+
+   // animate
+   $('html, body').animate({
+       scrollTop: $(hash).offset().top
+     }, 650, /*TODO: add jQuery.easing 'inOutExpo' */null);
+     window.location.hash = hash;
+};
+
+$("ul.nav li a").on('click', scroll);
+$("a.navbar-brand").on('click', scroll);
