@@ -1,0 +1,33 @@
+﻿<section id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3"></div>
+      <div class="col-sm-6">
+        <h1 class="text-center">Contact Us/Submit an Idea</h1>
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="nameLabel">Name</label>
+            <input type="text" class="form-control" id="nameLabel" placeholder="Name" />
+          </div>
+          <div class="form-group">
+            <label for="emailLabel">Email address</label>
+            <input type="email" class="form-control" id="emailLabel" placeholder="Email" />
+          </div>
+          <div class="form-group">
+            <label for="formSubmissionOption">What would you like to talk about?</label>
+            <select id="formSubmissionOption" class="form-control">
+              <option value="contact">Contact Us</option>
+              <option value="idea">Submit an Idea</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="msgTextarea">Message</label>
+            <textarea type="text" class="form-control" id="msgTextarea" rows="10" placeholder="Message"></textarea>
+          </div>
+          <button id="submitBtn" type="submit" class="btn btn-success btn-block">Submit</button>
+        </form>
+      </div>
+      <div class="col-sm-3"></div>
+    </div> <!-- .row -->
+  </div> <!-- .container -->
+</section>

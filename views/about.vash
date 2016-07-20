@@ -1,0 +1,51 @@
+<section id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12">
+      <h3 class="text-center">We are</h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+      <h1 class="text-center">CODE THE SOUTH</h1>
+      <hr class="double-hr" />
+    </div>
+  </div>
+  <br /><br />
+  <div class="roles">
+    <div class="row">
+      <div class="col-sm-2 col-sm-offset-2">
+        <i class="fa fa-4x fa-group text-orange"></i>
+        <h4 class="text-center">Encourage</h4>
+        <p class="text-center">Encourage and support development of public and private innovation in the field of civic technologies.</p>
+      </div> <!-- .col-sm-2 col-sm-offset-3 -->
+      <div class="col-sm-2 col-sm-offset-1">
+        <i class="fa fa-4x fa-group text-orange"></i>
+        <h4 class="text-center">Promote</h4>
+        <p class="text-center">Promote effective and efficient technologies for civic interaction.</p>
+      </div> <!-- .col-sm-2 col-sm-offset-2 -->
+      <div class="col-sm-2 col-sm-offset-1">
+        <i class="fa fa-4x fa-group text-orange"></i>
+        <h4 class="text-center">Inform</h4>
+        <p class="text-center">Inform area residents of metro government data sources.</p>
+      </div> <!-- .col-sm-2 col-sm-offset-3 -->
+    </div> <!-- .row -->
+    <br />
+    <div class="row">
+      <div class="col-sm-2 col-sm-offset-2">
+        <i class="fa fa-4x fa-group text-orange"></i>
+        <h4 class="text-center">Empower</h4>
+        <p class="text-center">Empower citizen influence by working with public policy makers to expand and enhance open data standards.</p>
+      </div> <!-- .col-sm-2 col-sm-offset-2 -->
+      <div class="col-sm-2 col-sm-offset-1">
+        <i class="fa fa-4x fa-group text-orange"></i>
+        <h4 class="text-center">Educate</h4>
+        <p class="text-center">Provide educational opportunity to those wishing to learn about application design and implementation.</p>
+      </div> <!-- .col-sm-2 col-sm-offset-3 -->
+      <div class="col-sm-2 col-sm-offset-1">
+        <i class="fa fa-4x fa-group text-orange"></i>
+        <h4 class="text-center">Sustain</h4>
+        <p class="text-center">Garner resources for and to maintain and sustain viability of Code The South.</p>
+      </div> <!-- .col-sm-2 col-sm-offset-2 -->
+    </div> <!-- .row -->
+  </div>
+</section>

@@ -1,0 +1,10 @@
+{
+  "name": "Code the South",
+  "homepage": "https://github.com/codethesouth/website",
+  "dependencies": {
+      "bootstrap": "^3.3.6",
+      "fontawesome": "^4.6.3",
+      "jquery": "^2.2.4",
+      "toastr": "^2.1.2"
+  }
+}
