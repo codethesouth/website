@@ -63,7 +63,7 @@ var scroll = function(e) {
    // animate
    $('html, body').animate({
        scrollTop: $(hash).offset().top
-     }, 650, /*TODO: add jQuery.easing 'inOutExpo' */null);
+     }, 650, null);
      window.location.hash = hash;
 };
 
