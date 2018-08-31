@@ -1,38 +1,19 @@
 {
   "name": "website",
-  "version": "0.0.1",
-  "description": "website",
+  "version": "1.1.0",
   "private": true,
-  "main": "server.js",
-  "contributors": [
-    {
-      "name": "Tyler Hughes",
-      "url": "https://github.com/RandomlyKnighted"
-    },
-    {
-      "name": "David Jones",
-      "url": "https://github.com/davidhjones"
-    },
-    {
-      "name": "Grant Paque",
-      "url": "https://github.com/granteous"
-    }
-  ],
   "dependencies": {
-    "async": "^2.0.0",
-    "body-parser": "^1.15.2",
-    "express": "^4.13.4",
-    "google-spreadsheet": "^2.0.3",
-    "vash": "^0.12.1"
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.3.1",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-scripts": "1.1.5"
   },
-  "devDependencies": {
-    "bower": "^1.7.9",
-    "grunt": "^1.0.1",
-    "grunt-bower-task": "^0.4.0",
-    "grunt-contrib-concat": "^1.0.1",
-    "grunt-contrib-copy": "^1.0.0",
-    "grunt-contrib-cssmin": "^1.0.1",
-    "grunt-contrib-uglify": "^1.0.1",
-    "grunt-contrib-watch": "^1.0.0"
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
   }
 }

@@ -1,2 +1,0 @@
-C:\dev\nodejs\CodeTheSouth\CodeTheSouth\obj\Debug\CodeTheSouth.njsprojResolveAssemblyReference.cache
-C:\dev\nodejs\CodeTheSouth\CodeTheSouth\bin\Microsoft.NodejsTools.WebRole.dll
