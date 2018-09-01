@@ -1,5 +1,5 @@
-var express = require( "express" ),
-    app = express( );
+const express = require( "express" );
+const app = express( );
 
 
 app.get( "/", function( request, resposne ) {
@@ -16,4 +16,5 @@ function validateEmail(email) {
     return re.test(email);
 }
 
-app.listen( 4000 );
+const port = process.env.PORT || 4000;
+app.listen( port );
