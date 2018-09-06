@@ -16,13 +16,24 @@ app.use( express.static( path.join( __dirname, 'client/build' ) ) );
 app.post( 'api/contact', function( request, response ) {
     console.log( request.body );
     // Send an e-mail containing the request body (contact form contents)
+    const json = defaultResponse;
+    json.success = true;
+    json.value = 'It works!';
+
+    response.send( json );
+} );
+
+app.get('api/test', function( request, response ) {
+    const json = defaultResponse;
+    json.success = true;
+    json.value = 'api/test works!';
+
+    response.send( json );
 } );
 
 // The "catchall" handler: for any request that doesn't
 // match one above, send back React's index.html file.
-app.get('*', ( request, response ) => {
-  response.sendFile( path.join( __dirname+'/client/build/index.html' ) );
-});
+
 
 function validateEmail( email ) {
     var regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -30,6 +41,6 @@ function validateEmail( email ) {
 }
 
 const port = process.env.PORT || 4000;
-app.listen(port);
+app.listen( port );
 
 console.log(`API listening on ${port}`);
