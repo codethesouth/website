@@ -1,0 +1,36 @@
+// Styling for the masthead
+header.masthead {
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - #{$navbar-height});
+  // replace the masthead.jpg image in the /img directory to change the image
+  // if the image name change, make sure to update the url path below!
+  background: linear-gradient(
+    60deg,
+    rgba(0, 0, 0, 0.7777485994397759) 30%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background-image: url('../images/rocket.jpg');
+  background-position: center;
+  background-attachment: scroll;
+  background-size: cover;
+  h1 {
+    font-size: 2.25rem;
+  }
+  @include media-breakpoint-up(lg) {
+    height: 100vh;
+    min-height: 40rem;
+    padding-top: $navbar-height;
+    padding-bottom: 0;
+    p {
+      font-size: 1.15rem;
+    }
+    h1 {
+      font-size: 3rem;
+    }
+  }
+  @include media-breakpoint-up(xl) {
+    h1 {
+      font-size: 3.5rem;
+    }
+  }
+}
