@@ -18,7 +18,7 @@
         "nonprofit"
     ],
     "dependencies": {
-        "gatsby": "^2.20.2",
+        "gatsby": "^4.25.7",
         "gatsby-plugin-manifest": "^2.3.1",
         "gatsby-plugin-offline": "^3.1.0",
         "gatsby-plugin-react-helmet": "^3.2.0",
